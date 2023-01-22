@@ -1,4 +1,7 @@
+
 const Header = () => {
+
+
     return (
         <>
             {/* Main Header*/}
@@ -211,6 +214,7 @@ const Header = () => {
                                     <div className="navbar-collapse show collapse clearfix">
                                         <ul className="navigation clearfix">
                                             {/*Keep This Empty / Menu will come through Javascript*/}
+                                            <li>Home</li>
                                         </ul>
                                     </div>
                                 </nav>

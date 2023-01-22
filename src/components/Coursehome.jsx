@@ -1,3 +1,5 @@
+import OwlCarousel from "react-owl-carousel";
+
 const Coursehome = () => {
     return (
         <>
@@ -16,7 +18,14 @@ const Coursehome = () => {
                     </div>
                     <div className="carousel-outer">
                         {/* Courses Carousel */}
-                        <div className="courses-carousel owl-carousel owl-theme default-nav">
+                        {/* <div className="courses-carousel owl-carousel owl-theme default-nav"> */}
+                        <OwlCarousel items={4}
+                            className="owl-theme clients-carousel"
+                            loop
+                            nav={false}
+                            dots={false}
+                            margin={8}
+                            >
                             {/* Course Block */}
                             <div className="course-block">
                                 <div className="inner-box">
@@ -357,7 +366,8 @@ const Coursehome = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            </OwlCarousel>
+                        {/* </div> */}
                     </div>
                     <div className="bottom-text">
                         <div className="content">
