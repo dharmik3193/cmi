@@ -10,7 +10,7 @@
 	} */
 
 	.header-style-one .logo-box{
-		min-width: auto;
+		/* min-width: auto; */
 		margin-right: 40px;
 	}
 }
@@ -142,10 +142,6 @@
 		margin-left: 15px;
 	}
 
-
-	.main-header .main-box .nav-outer {
-		width: auto;
-	}
 
 	.main-header .main-box{
 		justify-content: space-between;
