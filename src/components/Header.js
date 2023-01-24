@@ -209,7 +209,8 @@ const Header = () => {
                                 {/*Logo*/}
                                 <div className="logo">
                                     <a href="index.html" title="">
-                                        <img src="images/logo.png" alt="" title="" />
+                                        {/* <img src="images/logo.png" alt="" title="" /> */}
+                                        <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" />
                                     </a>
                                 </div>
                                 {/*Right Col*/}

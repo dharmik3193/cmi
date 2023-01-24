@@ -1,22 +1,26 @@
+import { useEffect, useState } from "react";
 import OwlCarousel from "react-owl-carousel";
 
 const Coursehome = () => {
-  const resp = {
-    responsive: {
-      0: {
-        items: 1,
-      },
-      450: {
-        items: 2,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 4,
-      },
-    },
-  };
+
+  const [screen,setscreen] = useState(4);
+
+  const handleResize = () => {
+    if (window.innerWidth <= 1024 && window.innerWidth >768) {
+      setscreen(3)
+    } else if(window.innerWidth<=768 && window.innerWidth >425){
+      setscreen(2)
+    } else if(window.innerWidth<=425 && window.innerWidth>0)
+    {
+      setscreen(1)
+    }else{
+      setscreen(4)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  })
   return (
     <>
       {/* Courses Section */}
@@ -36,13 +40,12 @@ const Coursehome = () => {
             {/* Courses Carousel */}
             {/* <div className="courses-carousel owl-carousel owl-theme default-nav"> */}
             <OwlCarousel
-              items={4}
+              items={screen}
               className="owl-theme clients-carousel"
               loop
               nav={false}
               dots={false}
               margin={8}
-              responsive={resp}
             >
               {/* Course Block */}
               <div className="course-block">
