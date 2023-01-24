@@ -3,18 +3,22 @@ import OwlCarousel from "react-owl-carousel";
 
 const Coursehome = () => {
 
-  const [screen,setscreen] = useState(4);
-
+  const [screen,setscreen] = useState((window.innerWidth <= 1024 && window.innerWidth >768)?3:(window.innerWidth<=768 && window.innerWidth >425)?2:(window.innerWidth<=425 && window.innerWidth>0)?1:4);
+  // var screen;
   const handleResize = () => {
     if (window.innerWidth <= 1024 && window.innerWidth >768) {
       setscreen(3)
-    } else if(window.innerWidth<=768 && window.innerWidth >425){
+      // screen=3;
+    } else if(window.innerWidth<=768 && window.innerWidth >579){
       setscreen(2)
-    } else if(window.innerWidth<=425 && window.innerWidth>0)
+      // screen=2
+    } else if(window.innerWidth<=579 && window.innerWidth>0)
     {
       setscreen(1)
+      // screen=1
     }else{
       setscreen(4)
+      // screen=4
     }
   }
 

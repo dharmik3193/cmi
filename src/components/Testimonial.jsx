@@ -1,6 +1,22 @@
+import { useEffect, useState } from "react";
 import OwlCarousel from "react-owl-carousel";
 
 const Testimonial = () => {
+  const [screen,setscreen] = useState((window.innerWidth<768)?1:2)
+
+  const handleResize = () => {
+    if (window.innerWidth <768) {
+      setscreen(1)
+    }else{
+      setscreen(2)
+      // screen=4
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  })
+
     return (
         <>
             {/* Testimonial Section Three */}
@@ -31,7 +47,7 @@ const Testimonial = () => {
                         <div className="testimonial-column col-xl-8 col-lg-7 col-md-12">
                             <div className="carousel-outer">
                                 {/* <div className="testimonial-carousel owl-carousel owl-theme"> */}
-                                    <OwlCarousel items={2}
+                                    <OwlCarousel items={screen}
                                         className="owl-theme carousel-outer testimonial-carousel"
                                         loop
                                         nav={false}

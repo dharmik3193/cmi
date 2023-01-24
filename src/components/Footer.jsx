@@ -16,7 +16,10 @@ const Footer = () => {
                                 <div className="footer-widget about-widget">
                                     <div className="logo">
                                         <a href="index.html">
-                                            <img src="images/logo-2.png" alt="" />
+                                            {/* <img src="images/logo-2.png" alt="" /> */}
+                                            <div className='footer_logo_bg' >
+                                                <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" className='footer_logo'/>
+                                            </div>
                                         </a>
                                     </div>
                                     <div className="text">
