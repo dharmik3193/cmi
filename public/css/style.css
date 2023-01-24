@@ -2266,8 +2266,8 @@ Header Style One
 
 ***/
 .header-style-one .main-box {
-  padding-right: 40px;
-  padding-left: 0;
+  /* padding-right: 40px; */
+  /* padding-left: 0; */
   -webkit-box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 60px rgba(0, 0, 0, 0.1);
 }

@@ -6,19 +6,20 @@ const Header = () => {
         <>
             {/* Main Header*/}
             <header className="main-header header-style-one">
-                <div className="auto-container">
+                <div className="container">
                     {/* Main box */}
                     <div className="main-box">
-                        <div className="row">
-                            <div className="logo-box col-lg col-sm-6">
+                        <div className="row justify-content-between">
+                            <div className="logo-box col-auto">
                                 <div className="logo">
                                     <a href="index.html">
                                         <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" />
+                                        {/* <img src="images/logo.png" alt="" title="" /> */}
                                     </a>
                                 </div>
                             </div>
                             {/*Nav Box*/}
-                            <div className="nav-outer col-lg col-sm-6">
+                            <div className="nav-outer col-auto">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
                                         <li className="current dropdown">
@@ -115,7 +116,8 @@ const Header = () => {
                             <div className="upper-box">
                                 <div className="nav-logo">
                                     <a href="index.html">
-                                        <img src="images/logo-2.png" alt="" title="" />
+                                        {/* <img src="images/logo-2.png" alt="" title="" /> */}
+                                        <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" />
                                     </a>
                                 </div>
                                 <div className="close-btn">

@@ -100,7 +100,7 @@
 @media only screen and (max-width: 1023px){
 	.header-style-one .logo-box {
 		padding: 10px 20px;
-		min-height: auto;
+		/* min-height: auto; */
 		margin-right: 0;
 	}
 
@@ -108,9 +108,9 @@
 		padding: 0;
 	}
 
-	.header-style-one .main-box {
+	/* .header-style-one .main-box {
 		padding-right: 20px;
-	}
+	} */
 	
 	.header-top,
 	.header-style-two .header-lower,
