@@ -22,7 +22,11 @@
 .row {
   width: 100%;
 }
-.footer_logo_bg{
+
+.count {
+  font-size: 30px !important;
+}
+.footer_logo_bg {
   width: fit-content;
   background-color: #ffff;
   padding: 15px;

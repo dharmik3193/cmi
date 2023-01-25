@@ -292,8 +292,8 @@ const Slider = () => {
                                     data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                                 >
                                     <h1>
-                                        Best <span className="style-font">online</span> <br />
-                                        courses from eduLerns
+                                        Best <span className="style-font">Career</span> <br />
+                                        courses from Codesign
                                     </h1>
                                 </div>
                                 <div
@@ -315,8 +315,8 @@ const Slider = () => {
                                     data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                                 >
                                     <div className="text">
-                                        World-class training and development programs <br />
-                                        developed by top teachers
+                                        Industry Oriented training and development courses <br />
+                                        developed by top IT trainers
                                     </div>
                                 </div>
                                 <div

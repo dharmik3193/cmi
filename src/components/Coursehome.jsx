@@ -60,7 +60,7 @@ const Coursehome = () => {
                         <img src="images/resource/course-1.jpg" alt="" />
                       </a>
                     </figure>
-                    <span className="price">$49.00</span>
+                    {/* <span className="price">$49.00</span> */}
                     <div className="value">Advanced</div>
                   </div>
                   <div className="content-box">
