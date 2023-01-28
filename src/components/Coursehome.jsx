@@ -2,29 +2,35 @@ import { useEffect, useState } from "react";
 import OwlCarousel from "react-owl-carousel";
 
 const Coursehome = () => {
-
-  const [screen,setscreen] = useState((window.innerWidth <= 1024 && window.innerWidth >768)?3:(window.innerWidth<=768 && window.innerWidth >425)?2:(window.innerWidth<=425 && window.innerWidth>0)?1:4);
+  const [screen, setscreen] = useState(
+    window.innerWidth <= 1024 && window.innerWidth > 768
+      ? 3
+      : window.innerWidth <= 768 && window.innerWidth > 425
+      ? 2
+      : window.innerWidth <= 425 && window.innerWidth > 0
+      ? 1
+      : 4
+  );
   // var screen;
   const handleResize = () => {
-    if (window.innerWidth <= 1024 && window.innerWidth >768) {
-      setscreen(3)
+    if (window.innerWidth <= 1024 && window.innerWidth > 768) {
+      setscreen(3);
       // screen=3;
-    } else if(window.innerWidth<=768 && window.innerWidth >579){
-      setscreen(2)
+    } else if (window.innerWidth <= 768 && window.innerWidth > 579) {
+      setscreen(2);
       // screen=2
-    } else if(window.innerWidth<=579 && window.innerWidth>0)
-    {
-      setscreen(1)
+    } else if (window.innerWidth <= 579 && window.innerWidth > 0) {
+      setscreen(1);
       // screen=1
-    }else{
-      setscreen(4)
+    } else {
+      setscreen(4);
       // screen=4
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener("resize", handleResize)
-  })
+    window.addEventListener("resize", handleResize);
+  });
   return (
     <>
       {/* Courses Section */}
@@ -37,7 +43,8 @@ const Coursehome = () => {
             <span className="sub-title">popular courses</span>
             <h2>
               Pick a course to
-              <br /> get started your study
+              <br />
+              boost up your skills
             </h2>
           </div>
           <div className="carousel-outer">
