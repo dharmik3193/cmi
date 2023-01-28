@@ -7,6 +7,10 @@
 var app = require('../app');
 var debug = require('debug')('cmi-api:server');
 var http = require('http');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://localhost:27017/cmi');
+console.log("DB Connected !!!");
 
 /**
  * Get port from environment and store in Express.
