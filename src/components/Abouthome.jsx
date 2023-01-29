@@ -6,7 +6,7 @@ const Abouthome = () => {
         <div className="anim-icons">
           <span className="icon icon-dotted-map" />
         </div>
-        <div className="auto-container">
+        <div className="container">
           <div className="row">
             <div
               className="content-column col-lg-6 col-md-12 order-2 wow fadeInRight"
