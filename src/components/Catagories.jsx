@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Catagories = () => {
     return (
         <>
@@ -23,10 +25,10 @@ const Catagories = () => {
                                     <i className="icon flaticon-student-2" />
                                 </div>
                                 <h6 className="title">
-                                    <a href="page-course-details.html">
-                                        Business <br />
-                                        Management
-                                    </a>
+                                    <Link to='/courses'>
+                                        Personality <br />
+                                        Development
+                                    </Link>
                                 </h6>
                             </div>
                         </div>
@@ -37,10 +39,10 @@ const Catagories = () => {
                                     <i className="icon flaticon-stationary" />
                                 </div>
                                 <h6 className="title">
-                                    <a href="page-course-details.html">
-                                        Arts and <br />
+                                    <Link to='/courses'>
+                                        Programming <br />
                                         Design
-                                    </a>
+                                    </Link>
                                 </h6>
                             </div>
                         </div>
@@ -51,10 +53,10 @@ const Catagories = () => {
                                     <i className="icon flaticon-online-learning" />
                                 </div>
                                 <h6 className="title">
-                                    <a href="page-course-details.html">
-                                        Computer <br />
-                                        Science
-                                    </a>
+                                    <Link to='/courses'>
+                                        Front end <br />
+                                        Development
+                                    </Link>
                                 </h6>
                             </div>
                         </div>
@@ -65,10 +67,10 @@ const Catagories = () => {
                                     <i className="icon flaticon-study" />
                                 </div>
                                 <h6 className="title">
-                                    <a href="page-course-details.html">
-                                        Personal <br />
+                                    <Link to='/courses'>
+                                        Back end <br />
                                         Development
-                                    </a>
+                                    </Link>
                                 </h6>
                             </div>
                         </div>
@@ -79,10 +81,10 @@ const Catagories = () => {
                                     <i className="icon flaticon-pie-chart" />
                                 </div>
                                 <h6 className="title">
-                                    <a href="page-course-details.html">
-                                        Business and <br />
-                                        Finance
-                                    </a>
+                                    <Link to='/courses'>
+                                        Mobile App <br />
+                                        Development
+                                    </Link>
                                 </h6>
                             </div>
                         </div>
@@ -93,10 +95,10 @@ const Catagories = () => {
                                     <i className="icon flaticon-web-2" />
                                 </div>
                                 <h6 className="title">
-                                    <a href="page-course-details.html">
-                                        Video and <br />
-                                        Photography
-                                    </a>
+                                    <Link to='/courses'>
+                                        Non Programming <br />
+                                        Design
+                                    </Link>
                                 </h6>
                             </div>
                         </div>

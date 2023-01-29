@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 import OwlCarousel from "react-owl-carousel";
+import { Link } from "react-router-dom";
 
 const Coursehome = () => {
   const [screen, setscreen] = useState(
     window.innerWidth <= 1024 && window.innerWidth > 768
       ? 3
       : window.innerWidth <= 768 && window.innerWidth > 425
-      ? 2
-      : window.innerWidth <= 425 && window.innerWidth > 0
-      ? 1
-      : 4
+        ? 2
+        : window.innerWidth <= 425 && window.innerWidth > 0
+          ? 1
+          : 4
   );
   // var screen;
   const handleResize = () => {
@@ -404,12 +405,15 @@ const Coursehome = () => {
           <div className="bottom-text">
             <div className="content">
               <strong>23,000+</strong> more skillful courses you can explore{" "}
-              <a
+              {/* <a
                 href="page-courses.html"
                 className="theme-btn btn-style-one small"
               >
+
+              </a> */}
+              <Link to='/courses' className="theme-btn btn-style-one small">
                 Explore All Courses
-              </a>
+              </Link>
             </div>
           </div>
         </div>

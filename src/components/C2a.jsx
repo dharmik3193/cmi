@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const C2a = () => {
     return (
         <>
@@ -19,14 +21,11 @@ const C2a = () => {
                                     <span className="style-font">Get your quality</span>
                                     <h1>
                                         Skills certificate <br />
-                                        from the edulerns
+                                        from the Codesign
                                     </h1>
-                                    <a
-                                        href="page-course-details.html"
-                                        className="theme-btn btn-style-one"
-                                    >
+                                    <Link to='/courses' className="theme-btn btn-style-one">
                                         <span className="btn-title">Get started now</span>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

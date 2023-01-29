@@ -104,7 +104,7 @@ const Contact = () => {
                                     </button>
                                     <button
                                         type="reset"
-                                        className="theme-btn btn-style-one bg-theme-color5"
+                                        className="theme-btn btn-style-one bg-theme-color5 button-contact"
                                     >
                                         <span className="btn-title">Reset</span>
                                     </button>
@@ -118,9 +118,7 @@ const Contact = () => {
                                     <span className="sub-title">Need any help?</span>
                                     <h2>Get in touch with us</h2>
                                     <div className="text">
-                                        Lorem ipsum is simply free text available dolor sit amet
-                                        consectetur notted adipisicing elit sed do eiusmod tempor
-                                        incididunt simply dolore magna.
+                                    We’re here to help and answer any question you might have. We look forward to hearing from you 🙂
                                     </div>
                                 </div>
                                 <ul className="list-unstyled contact-details__info">
@@ -130,27 +128,27 @@ const Contact = () => {
                                         </div>
                                         <div className="text">
                                             <h6>Have any question?</h6>
-                                            <a href="tel:980089850">
-                                                <span>Free</span> +92 (020)-9850
+                                            <a href="tel:8160254080">
+                                                <span>Free</span> +91 81602 54080
                                             </a>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div className="icon">
+                                    <li className="row">
+                                        <div className="icon col-6">
                                             <span className="lnr-icon-envelope1" />
                                         </div>
-                                        <div className="text">
+                                        <div className="text col-6">
                                             <h6>Write email</h6>
-                                            <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                                            <a href="mailto:info@codesignmultimedia.com">info@codesignmultimedia.com</a>
                                         </div>
                                     </li>
                                     <li>
                                         <div className="icon">
                                             <span className="lnr-icon-location" />
                                         </div>
-                                        <div className="text">
+                                        <div className="text text-details">
                                             <h6>Visit anytime</h6>
-                                            <span>66 broklyn golden street. New York</span>
+                                            <span>402, Middle point, Near dhara arcade,<br></br> Mahadev chowk, Mota Varachha, Surat.</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -166,7 +164,7 @@ const Contact = () => {
                     <div className="row">
                         {/* Google Map HTML Codes */}
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843149788316!2d144.9537131159042!3d-37.81714274201087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sbn!2sbd!4v1583760510840!5m2!1sbn!2sbd"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.8742442045004!2d72.88234441533888!3d21.236834786017166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04fb6166e6473%3A0x654e32ec4b18c578!2sCodesign%20Multimedia%20Institute!5e0!3m2!1sen!2sin!4v1674996979919!5m2!1sen!2sin"
                             data-tm-width="100%"
                             height={500}
                             frameBorder={0}

@@ -18,11 +18,11 @@ const Signup = () => {
                                 <div className="sec-title light">
                                     <h2>
                                         Sign up for a<br /> free trial lesson
-                                        <br /> by zoom
+                                        <br />
                                     </h2>
                                     <div className="text">
-                                        Quisque commodo, magna nec accu man euismod <br /> tellus mi
-                                        ornare enim, quis congue elit.
+                                        Are you looking for training and placement?
+                                        WE PROVIDE 100% PLACEMENT GUARANTEE! Are you looking for training and placements?
                                     </div>
                                 </div>
                             </div>

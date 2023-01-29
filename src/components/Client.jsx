@@ -75,7 +75,7 @@ const Client = () => {
                             dots={false}
                             margin={8}
                             >
-                            <div className='slide-item'><img src="images/resource/client.png" alt="" /></div>
+                            <div className='slide-item'><img src={require('../Assets/partner1.png')} alt="" /></div>
                             <div className='slide-item'><img src="images/resource/client.png" alt="" /></div>
                             <div className='slide-item'><img src="images/resource/client.png" alt="" /></div>
                             <div className='slide-item'><img src="images/resource/client.png" alt="" /></div>

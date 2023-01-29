@@ -45,6 +45,16 @@ a{
   z-index: 11;
 } */
 
+.call-to-action{
+  margin-top: 200px;
+}
+.button-contact{
+  margin: 10px;
+}
+.tparrows{
+  display: none !important;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-outer {
     justify-content: end;
@@ -54,5 +64,12 @@ a{
   }
   .logo img {
     max-height: 100px !important;
+  }
+  .call-to-action{
+    margin-top: 50px;
+  }
+
+  .text-details{
+    padding-right: 100px;
   }
 }

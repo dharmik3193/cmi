@@ -6253,7 +6253,7 @@ Section Title
   max-width: 100%;
   width: auto;
   height: auto;
-  opacity: 0.3;
+  /* opacity: 0.3; */
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -10586,7 +10586,7 @@ Sidebar
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -10644,6 +10644,7 @@ Sidebar
 }
 .contact-details__info li + li {
   margin-top: 19px;
+  margin-left: 0px;
 }
 
 /***

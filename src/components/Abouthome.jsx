@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Abouthome = () => {
   return (
     <>
@@ -38,9 +40,12 @@ const Abouthome = () => {
                   </li>
                 </ul>
                 <div className="btn-box">
-                  <a href="page-about.html" className="theme-btn btn-style-one">
+                  {/* <a href="page-about.html" className="theme-btn btn-style-one">
                     <span className="btn-title">Discover more</span>
-                  </a>
+                  </a> */}
+                  <Link to='/courses' className="theme-btn btn-style-one">
+                    <span className="btn-title">Discover more</span>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -21,13 +21,13 @@ const Home = () => {
             <Features />
             <Catagories />
             <Signup />
-            <Team />
+            {/* <Team /> */}
             <C2a />
             <Testimonial />
             <Abouthome2 />
             <Countdown />
             <News />
-            <Client />
+            {/* <Client /> */}
         </>
     )
 }

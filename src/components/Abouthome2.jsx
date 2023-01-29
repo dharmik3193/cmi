@@ -15,18 +15,15 @@ const Abouthome2 = () => {
                         >
                             <div className="inner-column">
                                 <div className="sec-title">
-                                    <h2>Over 36 years in distant learning for skills</h2>
+                                    <h2>IT CAREER IN SURAT, MOVING TOWARDS THE BETTER TOMORROW!</h2>
                                     <div className="text">
-                                        Lorem ipsum dolor sit amet consectur adipiscing elit sed eiusmod
-                                        tempor incididunt labore dolore magna aliquaenim ad minim. Sed
-                                        risus augue, commodo ornare felis non, eleifend molestie metus
-                                        pharetra eleifend.
+                                    We stepped in the market with the goal to help students, working professionals and other interested candidates get that dream job or open that desired freelance business in some of the most popular Computer / IT fields.
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="about-block col-lg-6 col-md-6 col-sm-6 wow fadeInUp">
                                         <div className="inner-box">
-                                            <span className="info-text">Best off canvas program</span>
+                                            <span className="info-text">Best career oriented courses</span>
                                             <div className="info-box">
                                                 <div className="thumb">
                                                     <img src="images/resource/avatar-1.jpg" alt="" />
@@ -38,7 +35,7 @@ const Abouthome2 = () => {
                                     </div>
                                     <div className="about-block style-two col-lg-6 col-md-6 col-sm-6 wow fadeInRight">
                                         <div className="inner-box">
-                                            <span className="info-text">Best degree program</span>
+                                            <span className="info-text">Best faculty support</span>
                                             <div className="info-box">
                                                 <div className="thumb">
                                                     <img src="images/resource/avatar-2.jpg" alt="" />

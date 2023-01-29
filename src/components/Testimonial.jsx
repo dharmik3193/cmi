@@ -37,8 +37,7 @@ const Testimonial = () => {
                                         courses
                                     </h2>
                                     <div className="text">
-                                        Quisque commodo, magna nec accu man euismod tellus mi ornare
-                                        enim.
+                                    Codesign Multimedia Institute(CMI) is a reputed training institute in Surat for web design, Game design,Mobile App Development, Web Development & All types of IT with full-fledged, result-oriented training experience.
                                     </div>
                                 </div>
                             </div>

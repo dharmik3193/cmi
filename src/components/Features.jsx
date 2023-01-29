@@ -36,8 +36,8 @@ const Features = () => {
                             <div className="inner-box ">
                                 <i className="icon flaticon-web-2" />
                                 <h5 className="title">
-                                    Unlimited <br />
-                                    Online Courses
+                                    Latest <br />
+                                    Technology
                                 </h5>
                             </div>
                         </div>
@@ -49,8 +49,8 @@ const Features = () => {
                             <div className="inner-box ">
                                 <i className="icon flaticon-users" />
                                 <h5 className="title">
-                                    Experienced <br />
-                                    Members
+                                    Lifetime <br />
+                                    Support
                                 </h5>
                             </div>
                         </div>

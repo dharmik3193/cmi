@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const Footer = () => {
     return (
         <>
@@ -12,19 +14,22 @@ const Footer = () => {
                     <div className="auto-container">
                         <div className="row">
                             {/*Footer Column*/}
-                            <div className="footer-column col-xl-3 col-lg-12 col-md-6 col-sm-12">
+                            <div className="footer-column col-xl-4 col-lg-12 col-md-6 col-sm-12">
                                 <div className="footer-widget about-widget">
                                     <div className="logo">
-                                        <a href="index.html">
+                                        <Link to='/'>
                                             {/* <img src="images/logo-2.png" alt="" /> */}
                                             <div className='footer_logo_bg' >
-                                                <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" className='footer_logo'/>
+                                                <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" className='footer_logo' />
                                             </div>
-                                        </a>
+                                        </Link>
                                     </div>
-                                    <div className="text">
+                                    {/* <div className="text">
                                         Get 26,000+ best online courses from us
-                                    </div>
+                                    </div> */}
+                                    <p>
+                                    Codesign Multimedia Institute is leading computer training institute in surat. We offers various type of computer training courses in Surat.
+                                    </p>
                                     <ul className="social-icon-two">
                                         <li>
                                             <a href="#">
@@ -50,7 +55,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             {/*Footer Column*/}
-                            <div className="footer-column col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                            {/* <div className="footer-column col-xl-2 col-lg-4 col-md-6 col-sm-12">
                                 <div className="footer-widget">
                                     <h4 className="widget-title">Explore</h4>
                                     <ul className="user-links">
@@ -74,26 +79,26 @@ const Footer = () => {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/*Footer Column*/}
-                            <div className="footer-column col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                            <div className="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
                                 <div className="footer-widget">
                                     <h4 className="widget-title">Links</h4>
                                     <ul className="user-links">
                                         <li>
-                                            <a href="#">About</a>
+                                            <Link to='/about'>About</Link>
                                         </li>
                                         <li>
-                                            <a href="#">Courses</a>
+                                            <Link to='/courses'>Courses</Link>
                                         </li>
                                         <li>
-                                            <a href="#">Instructor</a>
+                                            <Link to='/blog'>Blog</Link>
                                         </li>
                                         <li>
-                                            <a href="#">Events</a>
+                                            <Link to='/'>Events</Link>
                                         </li>
                                         <li>
-                                            <a href="#">Instructor Profile</a>
+                                        <Link to='/'>Gallery</Link>
                                         </li>
                                     </ul>
                                 </div>
