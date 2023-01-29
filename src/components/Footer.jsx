@@ -106,17 +106,16 @@ const Footer = () => {
                                         <ul className="contact-info">
                                             <li>
                                                 <i className="fa fa-phone-square" />{" "}
-                                                <a href="tel:+926668880000">+92 (0088) 6823</a>
+                                                <a href="tel:+918160254080">+91 81602 54080</a>
                                             </li>
                                             <li>
                                                 <i className="fa fa-envelope" />{" "}
-                                                <a href="mailto:needhelp@potisen.com">
-                                                    needhelp@company.com
+                                                <a href="mailto:info@codesignmultimedia.com">
+                                                    info@codesignmultimedia.com
                                                 </a>
                                             </li>
                                             <li>
-                                                <i className="fa fa-map-marker-alt" /> 80 Broklyn Golden
-                                                Street. New York. USA
+                                                <i className="fa fa-map-marker-alt" /> 402, Middle point , Near dhara arcade , Mahadev chowk , Mota Varachha , Surat.
                                             </li>
                                         </ul>
                                         <div className="subscribe-form">
@@ -147,7 +146,7 @@ const Footer = () => {
                     <div className="auto-container">
                         <div className="inner-container">
                             <div className="copyright-text">
-                                © Copyright 2022 by <a href="index.html">Company.com</a>
+                                © Copyright 2023 by <a href="index.html">Codesign Multimedia Institute</a>
                             </div>
                         </div>
                     </div>

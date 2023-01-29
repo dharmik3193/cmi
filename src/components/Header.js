@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 const Header = () => {
 
 
@@ -22,64 +23,20 @@ const Header = () => {
                             <div className="nav-outer col-auto">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
-                                        <li className="current dropdown">
-                                            <a href="index.html">Home</a>
-                                        </li>
-                                        <li className="dropdown">
-                                            <a href="#">Pages</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="page-about.html">About</a>
-                                                </li>
-                                                <li className="dropdown">
-                                                    <a href="#">Team</a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="page-team.html">Team List</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="page-team-details.html">Team Details</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="page-testimonial.html">Testimonial</a>
-                                                </li>
-                                                <li>
-                                                    <a href="page-pricing.html">Pricing</a>
-                                                </li>
-                                                <li>
-                                                    <a href="page-faq.html">FAQ</a>
-                                                </li>
-                                                <li>
-                                                    <a href="page-404.html">Page 404</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="dropdown">
-                                            <a href="#">Courses</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="page-courses.html">Courses List</a>
-                                                </li>
-                                                <li>
-                                                    <a href="page-course-details.html">Course Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li className="dropdown">
-                                            <a href="#">News</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="news-grid.html">News Grid</a>
-                                                </li>
-                                                <li>
-                                                    <a href="news-details.html">News Details</a>
-                                                </li>
-                                            </ul>
+                                        <li className="current">
+                                            <Link to='/'>Home</Link>
                                         </li>
                                         <li>
-                                            <a href="page-contact.html">Contact</a>
+                                            <Link to='/courses'>Courses</Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/about'>About</Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/blog'>Blog</Link>
+                                        </li>
+                                        <li>
+                                            <Link to='/contact'>Contact</Link>
                                         </li>
                                     </ul>
                                 </nav>

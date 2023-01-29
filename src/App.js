@@ -19,6 +19,12 @@ import Countdown from './components/Countdown';
 import News from './components/News';
 import Client from './components/Client';
 import Footer from './components/Footer';
+import Home from './Pages/Home';
+import Courses from './Pages/Courses';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Blog from './Pages/Blog';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -342,19 +348,22 @@ function App() {
   return (
     <div className="page-wrapper">
       <Header />
-      <Slider />
-      <Abouthome />
-      <Coursehome />
-      <Features />
-      <Catagories />
-      <Signup />
-      <Team />
-      <C2a />
-      <Testimonial />
-      <Abouthome2 />
-      <Countdown />
-      <News />
-      <Client />
+      {/* <Home/> */}
+      {/* <Courses/> */}
+      {/* <About/> */}
+      {/* <Contact/> */}
+      {/* <Blog/> */}
+
+      <Routes>
+
+        <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+
+      </Routes>
+
       <Footer />
     </div>
   );

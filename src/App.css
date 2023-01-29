@@ -2,6 +2,9 @@
   background-color: #ffff;
   box-shadow: none !important;
 }
+a{
+  text-decoration: none !important;
+}
 
 .upper-box {
   background-color: #ffff;
