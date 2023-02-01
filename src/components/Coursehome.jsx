@@ -78,10 +78,10 @@ const Coursehome = () => {
             >
               {/* Course Block */}
               {
-                course.map((item) => {
+                course.map((item,index) => {
                   return (
                     <>
-                      <div className="course-block">
+                      <div className="course-block" key={index}>
                         <div className="inner-box">
                           <div className="image-box">
                             <figure className="image">
