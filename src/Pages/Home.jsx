@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Abouthome from "../components/Abouthome";
 import Abouthome2 from "../components/Abouthome2";
 import C2a from "../components/C2a";
@@ -13,6 +14,7 @@ import Team from "../components/Team";
 import Testimonial from "../components/Testimonial";
 
 const Home = () => {
+    
     return (
         <>
             <Slider />
