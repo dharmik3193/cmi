@@ -9,14 +9,14 @@ var debug = require('debug')('cmi-api:server');
 var http = require('http');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/cmi');
+mongoose.connect('mongodb://127.0.0.1:27017/cmi');
 console.log("DB Connected !!!");
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(process.env.PORT || '8000');
 app.set('port', port);
 
 /**

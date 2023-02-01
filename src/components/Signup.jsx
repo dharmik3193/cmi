@@ -1,4 +1,44 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+
 const Signup = () => {
+
+    const [course, setCourse] = useState([]);
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [addcourse, setAddcourse] = useState('');
+
+    useEffect(() => {
+
+        axios.get('http://localhost:8000/getall_courses')
+            .then(function (res) {
+                // handle success
+                console.log(res.data.data);
+                setCourse(res.data.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+
+    }, [])
+
+    const add_inquiry = (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:8000/add_inquiry', {
+            name:name,
+            email:email,
+            course:addcourse
+          })
+          .then(function (res) {
+            console.log(res);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    }
+
+
     return (
         <>
             {/* Signup Section */}
@@ -32,13 +72,14 @@ const Signup = () => {
                                     {/* Sign Form */}
                                     <div className="signup-form wow fadeInLeft">
                                         {/*Contact Form*/}
-                                        <form method="post" action="get" id="contact-form">
+                                        <form id="contact-form">
                                             <div className="form-group">
                                                 <input
                                                     type="text"
                                                     name="full_name"
                                                     placeholder="Your name"
                                                     required=""
+                                                    onChange={(e)=>{setName(e.target.value)}}
                                                 />
                                             </div>
                                             <div className="form-group">
@@ -47,22 +88,25 @@ const Signup = () => {
                                                     name="Email"
                                                     placeholder="Email address"
                                                     required=""
+                                                    onChange={(e)=>{setEmail(e.target.value)}}
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <select className="custom-select">
+                                                <select className="custom-select" onChange={(e)=>{setAddcourse(e.target.value)}}>
                                                     <option value="">Select course</option>
-                                                    <option value="UI/UX Designing">UI/UX Designing</option>
-                                                    <option value="Digital Marketing">
-                                                        Digital Marketing
-                                                    </option>
+                                                    {
+                                                        course.map((item)=>{
+                                                            return(
+                                                                <option value={item.title}>{item.title}</option>
+                                                            )
+                                                        })
+                                                    }
                                                 </select>
                                             </div>
                                             <div className="form-group">
                                                 <button
                                                     className="theme-btn btn-style-one"
-                                                    type="submit"
-                                                    name="submit-form"
+                                                    onClick={add_inquiry}
                                                 >
                                                     Send Request
                                                 </button>

@@ -36,6 +36,10 @@ a{
   /* opacity: 0.5; */
   /* z-index: -1; */
 }
+
+.course-block{
+  margin: 10px;
+}
 .about-section{
   padding: 0% !important;
 }

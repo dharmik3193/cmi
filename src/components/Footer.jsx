@@ -1,6 +1,22 @@
 import { Link } from 'react-router-dom'
+import { FaLinkedin } from "react-icons/fa";
+import axios from 'axios';
+import { useState } from 'react';
 
 const Footer = () => {
+    const [email, setEmail] = useState('')
+    const subscribe = (e) => {
+        e.preventDefault()
+        axios.post('http://localhost:8000/add_newsletter', {
+            email:email
+          })
+          .then(function (res) {
+            console.log(res);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+    }
     return (
         <>
             {/* Main Footer */}
@@ -32,7 +48,7 @@ const Footer = () => {
                                     </p>
                                     <ul className="social-icon-two">
                                         <li>
-                                            <a href="#">
+                                            <a href="https://twitter.com/Codesign402" target="_blank">
                                                 <i className="fab fa-twitter" />
                                             </a>
                                         </li>
@@ -42,12 +58,12 @@ const Footer = () => {
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i className="fab fa-pinterest" />
+                                            <a href="https://www.linkedin.com/company/codesign-multimedia-institute/" target="_blank">
+                                            <FaLinkedin/>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="https://www.instagram.com/codesign_multimedia_institute/" target="_blank">
                                                 <i className="fab fa-instagram" />
                                             </a>
                                         </li>
@@ -124,7 +140,7 @@ const Footer = () => {
                                             </li>
                                         </ul>
                                         <div className="subscribe-form">
-                                            <form method="post" action="#">
+                                            <form>
                                                 <div className="form-group">
                                                     <input
                                                         type="email"
@@ -133,8 +149,9 @@ const Footer = () => {
                                                         defaultValue=""
                                                         placeholder="Email Address"
                                                         required=""
+                                                        onChange={(e)=>{setEmail(e.target.value)}}
                                                     />
-                                                    <button type="button" className="theme-btn btn-style-one">
+                                                    <button type="button" className="theme-btn btn-style-one" onClick={subscribe}>
                                                         <i className="fa fa-long-arrow-alt-right" />
                                                     </button>
                                                 </div>
