@@ -37,7 +37,7 @@ const Coursehome = () => {
   });
 
   useEffect(() => {
-    axios.get('http://localhost:8000/getall_courses')
+    axios.get('https://cmiapi1.onrender.com/getall_courses')
       .then(function (res) {
         // handle success
         console.log(res.data.data);
