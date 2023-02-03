@@ -7,7 +7,7 @@ const Footer = () => {
     const [email, setEmail] = useState('')
     const subscribe = (e) => {
         e.preventDefault()
-        axios.post('https://cmiapi1.onrender.com/add_newsletter', {
+        axios.post('https://cmiapi-kt1r.onrender.com/add_newsletter', {
             email:email
           })
           .then(function (res) {
