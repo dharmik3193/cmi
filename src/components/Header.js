@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+
 const Header = () => {
 
+    
 
     return (
         <>
@@ -23,7 +25,7 @@ const Header = () => {
                             <div className="nav-outer col-auto">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
-                                        <li className="current">
+                                        <li className="current" onClick={()=>{window.location.reload(false)}}>
                                             <Link to='/'>Home</Link>
                                         </li>
                                         <li>
@@ -90,7 +92,7 @@ const Header = () => {
                                     <div className="contact-info-box">
                                         <i className="icon lnr-icon-phone-handset" />
                                         <span className="title">Call Now</span>
-                                        <a href="tel:+92880098670">+92 (8800) - 98670</a>
+                                        <a href="tel:+918160254080">+91 81602 54080</a>
                                     </div>
                                 </li>
                                 <li>
@@ -98,21 +100,21 @@ const Header = () => {
                                     <div className="contact-info-box">
                                         <span className="icon lnr-icon-envelope1" />
                                         <span className="title">Send Email</span>
-                                        <a href="mailto:help@company.com">help@company.com</a>
+                                        <a href="mailto:info@codesignmultimedia.com">info@codesignmultimedia.com</a>
                                     </div>
                                 </li>
                                 <li>
                                     {/* Contact Info Box */}
                                     <div className="contact-info-box">
                                         <span className="icon lnr-icon-clock" />
-                                        <span className="title">Send Email</span>
-                                        Mon - Sat 8:00 - 6:30, Sunday - CLOSED
+                                        <span className="title">Open Hours</span>
+                                        Mon - Sat 8:00 - 8:00, Sunday - 10:00 to 1:00
                                     </div>
                                 </li>
                             </ul>
                             <ul className="social-links">
                                 <li>
-                                    <a href="#">
+                                    <a href="https://twitter.com/Codesign402" target="_blank">
                                         <i className="fab fa-twitter" />
                                     </a>
                                 </li>
@@ -122,12 +124,12 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i className="fab fa-pinterest" />
+                                    <a href="https://www.linkedin.com/company/90445650/admin/" target="_blank">
+                                        <i className="fab fa-linkedin" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="https://www.instagram.com/codesign_multimedia_institute/" target="_blank">
                                         <i className="fab fa-instagram" />
                                     </a>
                                 </li>

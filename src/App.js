@@ -344,7 +344,7 @@ function App() {
       handlePreloader();
     });
 
-  });
+  },[]);
 
   return (
     <div className="page-wrapper">

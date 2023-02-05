@@ -32,6 +32,9 @@ const Signup = () => {
           })
           .then(function (res) {
             console.log(res);
+            setName('')
+            setEmail('');
+            setAddcourse('')
           })
           .catch(function (error) {
             console.log(error);
@@ -78,7 +81,8 @@ const Signup = () => {
                                                     type="text"
                                                     name="full_name"
                                                     placeholder="Your name"
-                                                    required=""
+                                                    required="true"
+                                                    value={name}
                                                     onChange={(e)=>{setName(e.target.value)}}
                                                 />
                                             </div>
@@ -87,12 +91,13 @@ const Signup = () => {
                                                     type="text"
                                                     name="Email"
                                                     placeholder="Email address"
-                                                    required=""
+                                                    required="true"
+                                                    value={email}
                                                     onChange={(e)=>{setEmail(e.target.value)}}
                                                 />
                                             </div>
                                             <div className="form-group">
-                                                <select className="custom-select" onChange={(e)=>{setAddcourse(e.target.value)}}>
+                                                <select className="custom-select" value={addcourse} onChange={(e)=>{setAddcourse(e.target.value)}}>
                                                     <option value="">Select course</option>
                                                     {
                                                         course.map((item)=>{

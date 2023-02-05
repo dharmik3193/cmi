@@ -1,4 +1,5 @@
 const Slider = () => {
+
     return (
         <>
             {/*Main Slider*/}
