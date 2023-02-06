@@ -1917,7 +1917,7 @@ Main Header
   display: block;
 }
 .main-header .logo img {
-  max-width: 100%;
+  width: 157px;
   height: auto;
 }
 .main-header .main-box {
@@ -2435,9 +2435,6 @@ Sticky Header
 
 .sticky-header .logo {
   padding: 10px 0;
-}
-.sticky-header .logo img {
-  max-height: 40px;
 }
 .sticky-header .nav-outer {
   position: relative;

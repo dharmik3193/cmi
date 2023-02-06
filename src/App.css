@@ -38,7 +38,7 @@ a{
 }
 
 .course-block{
-  margin: 10px;
+  margin: 20px;
 }
 .about-section{
   padding: 0% !important;
@@ -84,5 +84,25 @@ a{
 
   .text-details{
     padding-right: 100px;
+  }
+
+  .feature-title-one{
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .inner-column{
+    margin-left: 0px !important;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .inner-column{
+    margin-left: 0px !important;
+  }
+  .image-2{
+    right: 0px !important;
   }
 }

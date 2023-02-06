@@ -28,21 +28,19 @@ const Footer = () => {
                 {/*Widgets Section*/}
                 <div className="widgets-section">
                     <div className="auto-container">
-                        <div className="row">
+                        <div className="row justify-content-center">
                             {/*Footer Column*/}
                             <div className="footer-column col-xl-4 col-lg-12 col-md-6 col-sm-12">
                                 <div className="footer-widget about-widget">
                                     <div className="logo">
                                         <Link to='/'>
                                             {/* <img src="images/logo-2.png" alt="" /> */}
-                                            <div className='footer_logo_bg' >
-                                                <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" className='footer_logo' />
+                                            <div >
+                                                <img src={require('../Assets/cslight.png')} alt="Codesign Logo" title="Codesign" className='footer_logo' />
                                             </div>
                                         </Link>
                                     </div>
-                                    {/* <div className="text">
-                                        Get 26,000+ best online courses from us
-                                    </div> */}
+                                    <div>
                                     <p>
                                     Codesign Multimedia Institute is leading computer training institute in surat. We offers various type of computer training courses in Surat.
                                     </p>
@@ -68,6 +66,7 @@ const Footer = () => {
                                             </a>
                                         </li>
                                     </ul>
+                                    </div>
                                 </div>
                             </div>
                             {/*Footer Column*/}

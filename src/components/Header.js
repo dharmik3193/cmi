@@ -13,16 +13,16 @@ const Header = () => {
                     {/* Main box */}
                     <div className="main-box">
                         <div className="row justify-content-between">
-                            <div className="logo-box col-auto">
+                            <div className="logo-box col-6">
                                 <div className="logo">
                                     <a href="index.html">
-                                        <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" />
+                                        <img src={require('../Assets/codesign.webp')} alt="Codesign Logo" title="Codesign" />
                                         {/* <img src="images/logo.png" alt="" title="" /> */}
                                     </a>
                                 </div>
                             </div>
                             {/*Nav Box*/}
-                            <div className="nav-outer col-auto">
+                            <div className="nav-outer col-6">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
                                         <li className="current" onClick={()=>{window.location.reload(false)}}>
@@ -76,7 +76,7 @@ const Header = () => {
                                 <div className="nav-logo">
                                     <a href="index.html">
                                         {/* <img src="images/logo-2.png" alt="" title="" /> */}
-                                        <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" />
+                                        <img src={require('../Assets/codesign.webp')} alt="Codesign Logo" title="Codesign" />
                                     </a>
                                 </div>
                                 <div className="close-btn">
@@ -124,7 +124,7 @@ const Header = () => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.linkedin.com/company/90445650/admin/" target="_blank">
+                                    <a href="https://www.linkedin.com/company/90445650/" target="_blank">
                                         <i className="fab fa-linkedin" />
                                     </a>
                                 </li>
@@ -169,7 +169,7 @@ const Header = () => {
                                 <div className="logo">
                                     <a href="index.html" title="">
                                         {/* <img src="images/logo.png" alt="" title="" /> */}
-                                        <img src={require('../Assets/codesign.png')} alt="Codesign Logo" title="Codesign" />
+                                        <img src={require('../Assets/codesign.webp')} alt="Codesign Logo" title="Codesign" />
                                     </a>
                                 </div>
                                 {/*Right Col*/}
