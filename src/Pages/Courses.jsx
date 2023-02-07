@@ -51,7 +51,7 @@ const Courses = () => {
                                 course.map((item) => {
                                     return (
                                         <>
-                                            <div className="course-block-two col-lg-4 col-md-6 col-sm-12">
+                                            <div className="course-block-two col-lg-3 col-md-6 col-sm-12">
                                                 <div className="inner-box">
                                                     <div className="image-box">
                                                         <figure className="image">
