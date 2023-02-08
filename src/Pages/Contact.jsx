@@ -1,4 +1,45 @@
+import axios from "axios";
+import { useState } from "react";
+
 const Contact = () => {
+
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [mobile, setMobile] = useState('');
+    const [message, setMessage] = useState('');
+
+    const add_inquiry = (e) => {
+        e.preventDefault()
+        axios.post('https://cmiapi-kt1r.onrender.com/contact', {
+            name: name,
+            email: email,
+            subject: subject,
+            phone: mobile,
+            message: message
+
+        })
+            .then(function (res) {
+                console.log(res);
+                setName('')
+                setEmail('')
+                setSubject('');
+                setMobile('');
+                setMessage('');
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+
+    const reset = () => {
+        setName('')
+        setEmail('')
+        setSubject('');
+        setMobile('');
+        setMessage('');
+    }
+
     return (
         <>
             <section
@@ -42,6 +83,7 @@ const Contact = () => {
                                                 name="form_name"
                                                 className="form-control"
                                                 type="text"
+                                                onChange={(e)=>{setName(e.target.value)}}
                                                 placeholder="Enter Name"
                                             />
                                         </div>
@@ -52,6 +94,7 @@ const Contact = () => {
                                                 name="form_email"
                                                 className="form-control required email"
                                                 type="email"
+                                                onChange={(e)=>{setEmail(e.target.value)}}
                                                 placeholder="Enter Email"
                                             />
                                         </div>
@@ -64,6 +107,7 @@ const Contact = () => {
                                                 name="form_subject"
                                                 className="form-control required"
                                                 type="text"
+                                                onChange={(e)=>{setSubject(e.target.value)}}
                                                 placeholder="Enter Subject"
                                             />
                                         </div>
@@ -74,6 +118,7 @@ const Contact = () => {
                                                 name="form_phone"
                                                 className="form-control"
                                                 type="text"
+                                                onChange={(e)=>{setMobile(e.target.value)}}
                                                 placeholder="Enter Phone"
                                             />
                                         </div>
@@ -84,6 +129,7 @@ const Contact = () => {
                                         name="form_message"
                                         className="form-control required"
                                         rows={7}
+                                        onChange={(e)=>{setMessage(e.target.value)}}
                                         placeholder="Enter Message"
                                         defaultValue={""}
                                     />
@@ -96,9 +142,10 @@ const Contact = () => {
                                         defaultValue=""
                                     />
                                     <button
-                                        type="submit"
+                                        type="button"
                                         className="theme-btn btn-style-one"
                                         data-loading-text="Please wait..."
+                                        onClick={add_inquiry}
                                     >
                                         <span className="btn-title">Send message</span>
                                     </button>
@@ -106,7 +153,7 @@ const Contact = () => {
                                         type="reset"
                                         className="theme-btn btn-style-one bg-theme-color5 button-contact"
                                     >
-                                        <span className="btn-title">Reset</span>
+                                        <span className="btn-title" onClick={reset}>Reset</span>
                                     </button>
                                 </div>
                             </form>
@@ -118,7 +165,7 @@ const Contact = () => {
                                     <span className="sub-title">Need any help?</span>
                                     <h2>Get in touch with us</h2>
                                     <div className="text">
-                                    We’re here to help and answer any question you might have. We look forward to hearing from you 🙂
+                                        We’re here to help and answer any question you might have. We look forward to hearing from you 🙂
                                     </div>
                                 </div>
                                 <ul className="list-unstyled contact-details__info">

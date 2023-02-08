@@ -26,6 +26,7 @@ import Contact from './Pages/Contact';
 import Blog from './Pages/Blog';
 import { Route, Routes } from 'react-router-dom';
 import Login from './Pages/Login';
+import SingleCourse from './Pages/SingleCourse';
 
 function App() {
 
@@ -362,7 +363,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
-        {/* <Route path='/login' element={<Login/>}/> */}
+        <Route path='/course/:id' element={<SingleCourse/>}/>
 
       </Routes>
 

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Courses = () => {
 
@@ -68,9 +69,9 @@ const Courses = () => {
                                                             </li>
                                                         </ul>
                                                         <h5 className="title">
-                                                            <a href="page-course-details.html">
+                                                            <Link to={`/course/${item._id}`}>
                                                                 {item.title}
-                                                            </a>
+                                                            </Link>
                                                         </h5>
                                                         <div className="other-info">
                                                             <div className="rating-box">
