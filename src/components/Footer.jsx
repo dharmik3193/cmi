@@ -27,12 +27,12 @@ const Footer = () => {
                 />
                 {/*Widgets Section*/}
                 <div className="widgets-section">
-                    <div className="auto-container">
-                        <div className="row justify-content-center">
+                    <div className="container align-center">
+                        <div className="row">
                             {/*Footer Column*/}
-                            <div className="footer-column col-xl-4 col-lg-12 col-md-6 col-sm-12">
+                            <div className="footer-column col-lg-3 col-md-6 col-12">
                                 <div className="footer-widget about-widget">
-                                    <div className="logo">
+                                    <div className="logo text-md-left text-center">
                                         <Link to='/'>
                                             {/* <img src="images/logo-2.png" alt="" /> */}
                                             <div >
@@ -41,9 +41,10 @@ const Footer = () => {
                                         </Link>
                                     </div>
                                     <div>
-                                    <p>
+                                    <p className='text-justify'>
                                     Codesign Multimedia Institute is leading computer training institute in surat. We offers various type of computer training courses in Surat.
                                     </p>
+                                    <h6 className='widget-title'>follow us on</h6>
                                     <ul className="social-icon-two">
                                         <li>
                                             <a href="https://twitter.com/Codesign402" target="_blank">
@@ -69,8 +70,8 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/*Footer Column*/}
-                            {/* <div className="footer-column col-xl-2 col-lg-4 col-md-6 col-sm-12">
+                            {/* Footer Column*/}
+                            <div className="footer-column col-lg-2 col-md-6 col-6">
                                 <div className="footer-widget">
                                     <h4 className="widget-title">Explore</h4>
                                     <ul className="user-links">
@@ -94,9 +95,9 @@ const Footer = () => {
                                         </li>
                                     </ul>
                                 </div>
-                            </div> */}
-                            {/*Footer Column*/}
-                            <div className="footer-column col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            </div>
+                            {/*Footer Column */}
+                            <div className="footer-column col-lg-2 col-md-6 col-6">
                                 <div className="footer-widget">
                                     <h4 className="widget-title">Links</h4>
                                     <ul className="user-links">
@@ -119,7 +120,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             {/*Footer Column*/}
-                            <div className="footer-column col-xl-5 col-lg-4 col-md-6 col-sm-12">
+                            <div className="footer-column col-lg-5 col-md-6 col-12">
                                 <div className="footer-widget contact-widget">
                                     <h4 className="widget-title">Contact</h4>
                                     <div className="widget-content">

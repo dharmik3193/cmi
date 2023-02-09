@@ -10682,8 +10682,9 @@ Sidebar
   position: relative;
 }
 .main-footer .widget-title {
-  position: relative;
-  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   color: #ffffff;
   margin-bottom: 25px;
 }

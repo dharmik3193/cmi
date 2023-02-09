@@ -83,6 +83,7 @@ const Contact = () => {
                                                 name="form_name"
                                                 className="form-control"
                                                 type="text"
+                                                value={name}
                                                 onChange={(e)=>{setName(e.target.value)}}
                                                 placeholder="Enter Name"
                                             />
@@ -94,6 +95,7 @@ const Contact = () => {
                                                 name="form_email"
                                                 className="form-control required email"
                                                 type="email"
+                                                value={email}
                                                 onChange={(e)=>{setEmail(e.target.value)}}
                                                 placeholder="Enter Email"
                                             />
@@ -107,6 +109,7 @@ const Contact = () => {
                                                 name="form_subject"
                                                 className="form-control required"
                                                 type="text"
+                                                value={subject}
                                                 onChange={(e)=>{setSubject(e.target.value)}}
                                                 placeholder="Enter Subject"
                                             />
@@ -118,6 +121,7 @@ const Contact = () => {
                                                 name="form_phone"
                                                 className="form-control"
                                                 type="text"
+                                                value={mobile}
                                                 onChange={(e)=>{setMobile(e.target.value)}}
                                                 placeholder="Enter Phone"
                                             />
@@ -129,6 +133,7 @@ const Contact = () => {
                                         name="form_message"
                                         className="form-control required"
                                         rows={7}
+                                        value={message}
                                         onChange={(e)=>{setMessage(e.target.value)}}
                                         placeholder="Enter Message"
                                         defaultValue={""}

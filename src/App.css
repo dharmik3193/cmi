@@ -68,6 +68,23 @@ a{
   padding: 20px;
 }
 
+.align-center{
+  text-align: start;
+}
+
+.row{
+  margin: 0% !important;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+ul{
+  margin: 0% ;
+  padding: 0% !important;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-outer {
     justify-content: end;

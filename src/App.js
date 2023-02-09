@@ -27,6 +27,7 @@ import Blog from './Pages/Blog';
 import { Route, Routes } from 'react-router-dom';
 import Login from './Pages/Login';
 import SingleCourse from './Pages/SingleCourse';
+import GptFooter from './components/Gptfooter';
 
 function App() {
 
@@ -368,6 +369,7 @@ function App() {
       </Routes>
 
       <Footer />
+      {/* <GptFooter/> */}
     </div>
   );
 }
