@@ -85,6 +85,15 @@ ul{
   padding: 0% !important;
 }
 
+.title{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.category-block-current-two:nth-child(6n+1) .inner-box .sub-title {
+  color: #00c7c4;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-outer {
     justify-content: end;

@@ -1,23 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import $ from 'jquery';
-import { Swiper } from 'swiper/react';
 import { useEffect } from 'react'
 import WOW from 'wowjs';
 import Header from './components/Header';
-import Slider from './components/Slider';
-import Abouthome from './components/Abouthome';
-import Coursehome from './components/Coursehome';
-import Features from './components/Features';
-import Catagories from './components/Catagories';
-import Signup from './components/Signup';
-import Team from './components/Team';
-import C2a from './components/C2a';
-import Testimonial from './components/Testimonial';
-import Abouthome2 from './components/Abouthome2';
-import Countdown from './components/Countdown';
-import News from './components/News';
-import Client from './components/Client';
 import Footer from './components/Footer';
 import Home from './Pages/Home';
 import Courses from './Pages/Courses';
@@ -25,9 +10,7 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Blog from './Pages/Blog';
 import { Route, Routes } from 'react-router-dom';
-import Login from './Pages/Login';
 import SingleCourse from './Pages/SingleCourse';
-import GptFooter from './components/Gptfooter';
 
 function App() {
 
@@ -350,7 +333,7 @@ function App() {
 
   return (
     <div className="page-wrapper">
-      <Header />
+      {/* <Header /> */}
       {/* <Home/> */}
       {/* <Courses/> */}
       {/* <About/> */}

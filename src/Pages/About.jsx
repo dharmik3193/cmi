@@ -1,10 +1,12 @@
 import Abouthome from "../components/Abouthome"
 import Coursehome from "../components/Coursehome"
+import Header from "../components/Header";
 
 const About = () => {
     return (
         <>
             <>
+            <Header id="3"/>
                 {/* Start main-content */}
                 <section
                     className="page-title"

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Slider = () => {
 
     return (
@@ -338,9 +340,9 @@ const Slider = () => {
                                     data-textalign="['top','top','top','top']"
                                     data-frames='[{"delay":1000,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                                 >
-                                    <a href="page-courses.html" className="theme-btn btn-style-one">
+                                    <Link to={'/courses'} className="theme-btn btn-style-one">
                                         Find Course
-                                    </a>
+                                    </Link>
                                 </div>
                             </li>
                         </ul>

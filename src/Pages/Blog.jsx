@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import Header from "../components/Header";
 
 const Blog = () => {
 
@@ -19,6 +20,7 @@ const Blog = () => {
     }, [])
     return (
         <>
+        <Header id="4"/>
             <section
                 className="page-title"
                 style={{ backgroundImage: "url(images/background/page-title.jpg)" }}

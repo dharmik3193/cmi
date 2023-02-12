@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import Header from "../components/Header";
 
 const Contact = () => {
 
@@ -42,6 +43,7 @@ const Contact = () => {
 
     return (
         <>
+        <Header id="5"/>
             <section
                 className="page-title"
                 style={{ backgroundImage: "url(images/background/page-title.jpg)" }}

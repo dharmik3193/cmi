@@ -62,7 +62,7 @@ const Coursehome = () => {
             <div className="sec-title">
               <span className="sub-title">popular courses</span>
               <h2>
-                Pick a course to
+                Pick a course to &nbsp;
                 <br />
                 boost up your skills
               </h2>
@@ -87,18 +87,18 @@ const Coursehome = () => {
                           <div className="inner-box">
                             <div className="image-box">
                               <figure className="image">
-                                <a href="page-course-details.html">
+                                <Link to={`course/${item._id}`}>
                                   <img src={item.image} alt="" />
-                                </a>
+                                </Link>
                               </figure>
                               {/* <span className="price">$49.00</span> */}
                               <div className="value">{item.level}</div>
                             </div>
                             <div className="content-box">
                               <h5 className="title">
-                                <a href="page-course-details.html">
+                                <Link to={`course/${item._id}`}>
                                   {item.title}
-                                </a>
+                                </Link>
                               </h5>
                               <div className="other-info">
                                 <div className="rating-box">

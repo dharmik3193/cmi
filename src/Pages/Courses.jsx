@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "../components/Header";
 
 const Courses = () => {
 
@@ -23,6 +24,7 @@ const Courses = () => {
     if (isdata) {
         return (
             <>
+            <Header id="2"/>
                 <section
                     className="page-title"
                     style={{ backgroundImage: "url(images/background/page-title.jpg)" }}

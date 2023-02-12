@@ -1,9 +1,39 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = (props) => {
+    const [isActive1, setIsActive1] = useState(false);
+    const [isActive2, setIsActive2] = useState(false);
+    const [isActive3, setIsActive3] = useState(false);
+    const [isActive4, setIsActive4] = useState(false);
+    const [isActive5, setIsActive5] = useState(false);
+    const handleClick = (id) => {
+        setIsActive1(true)
+        if(id===1)
+        {
+            setIsActive1(true);setIsActive2(!true);setIsActive3(!true);setIsActive4(!true);setIsActive5(!true)
+        }else if(id==2)
+        {
+            setIsActive1(!true);setIsActive2(true);setIsActive3(!true);setIsActive4(!true);setIsActive5(!true)
+        }else if(id==3)
+        {
+            setIsActive1(!true);setIsActive2(!true);setIsActive3(true);setIsActive4(!true);setIsActive5(!true)
+        }else if(id==4)
+        {
+            setIsActive1(!true);setIsActive2(!true);setIsActive3(!true);setIsActive4(true);setIsActive5(!true)
+        }else if(id==5)
+        {
+            setIsActive1(!true);setIsActive2(!true);setIsActive3(!true);setIsActive4(!true);setIsActive5(true)
+        }
+        return false;
+      };
+      useEffect(() => {
+        handleClick(props.id)
+      }, [])
+      
 
-    
 
     return (
         <>
@@ -25,19 +55,19 @@ const Header = () => {
                             <div className="nav-outer col-6">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
-                                        <li className="current" onClick={()=>{window.location.reload(false)}}>
+                                        <li className={isActive1?"current":""} onClick={()=>{window.location.reload(false)}}>
                                             <Link to='/'>Home</Link>
                                         </li>
-                                        <li>
+                                        <li className={isActive2?"current":""}>
                                             <Link to='/courses'>Courses</Link>
                                         </li>
-                                        <li>
+                                        <li className={isActive3?"current":""}>
                                             <Link to='/about'>About</Link>
                                         </li>
-                                        <li>
+                                        <li className={isActive4?"current":""}>
                                             <Link to='/blog'>Blog</Link>
                                         </li>
-                                        <li>
+                                        <li className={isActive5?"current":""}>
                                             <Link to='/contact'>Contact</Link>
                                         </li>
                                     </ul>
