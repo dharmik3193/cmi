@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Preloader from './Preloader';
 
 const Header = (props) => {
     const [isActive1, setIsActive1] = useState(false);
@@ -11,28 +12,23 @@ const Header = (props) => {
     const [isActive5, setIsActive5] = useState(false);
     const handleClick = (id) => {
         setIsActive1(true)
-        if(id===1)
-        {
-            setIsActive1(true);setIsActive2(!true);setIsActive3(!true);setIsActive4(!true);setIsActive5(!true)
-        }else if(id==2)
-        {
-            setIsActive1(!true);setIsActive2(true);setIsActive3(!true);setIsActive4(!true);setIsActive5(!true)
-        }else if(id==3)
-        {
-            setIsActive1(!true);setIsActive2(!true);setIsActive3(true);setIsActive4(!true);setIsActive5(!true)
-        }else if(id==4)
-        {
-            setIsActive1(!true);setIsActive2(!true);setIsActive3(!true);setIsActive4(true);setIsActive5(!true)
-        }else if(id==5)
-        {
-            setIsActive1(!true);setIsActive2(!true);setIsActive3(!true);setIsActive4(!true);setIsActive5(true)
+        if (id === 1) {
+            setIsActive1(true); setIsActive2(!true); setIsActive3(!true); setIsActive4(!true); setIsActive5(!true)
+        } else if (id == 2) {
+            setIsActive1(!true); setIsActive2(true); setIsActive3(!true); setIsActive4(!true); setIsActive5(!true)
+        } else if (id == 3) {
+            setIsActive1(!true); setIsActive2(!true); setIsActive3(true); setIsActive4(!true); setIsActive5(!true)
+        } else if (id == 4) {
+            setIsActive1(!true); setIsActive2(!true); setIsActive3(!true); setIsActive4(true); setIsActive5(!true)
+        } else if (id == 5) {
+            setIsActive1(!true); setIsActive2(!true); setIsActive3(!true); setIsActive4(!true); setIsActive5(true)
         }
         return false;
-      };
-      useEffect(() => {
+    };
+    useEffect(() => {
         handleClick(props.id)
-      }, [])
-      
+    }, [])
+
 
 
     return (
@@ -45,29 +41,28 @@ const Header = (props) => {
                         <div className="row justify-content-between">
                             <div className="logo-box col-6">
                                 <div className="logo">
-                                    <a href="index.html">
+                                    <Link to={'/'} onClick={() => { window.location.reload(false) }}>
                                         <img src={require('../Assets/codesign.webp')} alt="Codesign Logo" title="Codesign" />
-                                        {/* <img src="images/logo.png" alt="" title="" /> */}
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             {/*Nav Box*/}
                             <div className="nav-outer col-6">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
-                                        <li className={isActive1?"current":""} onClick={()=>{window.location.reload(false)}}>
+                                        <li className={isActive1 ? "current" : ""} onClick={() => { window.location.reload(false) }}>
                                             <Link to='/'>Home</Link>
                                         </li>
-                                        <li className={isActive2?"current":""}>
+                                        <li className={isActive2 ? "current" : ""}>
                                             <Link to='/courses'>Courses</Link>
                                         </li>
-                                        <li className={isActive3?"current":""}>
+                                        <li className={isActive3 ? "current" : ""}>
                                             <Link to='/about'>About</Link>
                                         </li>
-                                        <li className={isActive4?"current":""}>
+                                        <li className={isActive4 ? "current" : ""}>
                                             <Link to='/blog'>Blog</Link>
                                         </li>
-                                        <li className={isActive5?"current":""}>
+                                        <li className={isActive5 ? "current" : ""}>
                                             <Link to='/contact'>Contact</Link>
                                         </li>
                                     </ul>

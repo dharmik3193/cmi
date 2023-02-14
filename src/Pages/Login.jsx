@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Footer from "../components/Footer";
 
 const Login = () => {
 
@@ -23,6 +24,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            {/* <Footer/> */}
 
         </>
     )

@@ -11,6 +11,7 @@ import Contact from './Pages/Contact';
 import Blog from './Pages/Blog';
 import { Route, Routes } from 'react-router-dom';
 import SingleCourse from './Pages/SingleCourse';
+import Preloader from './components/Preloader';
 
 function App() {
 
@@ -329,7 +330,7 @@ function App() {
       handlePreloader();
     });
 
-  },[]);
+  }, []);
 
   return (
     <div className="page-wrapper">
@@ -350,8 +351,7 @@ function App() {
         <Route path='/course/:id' element={<SingleCourse/>}/>
 
       </Routes>
-
-      <Footer />
+      {/* <Preloader /> */}
       {/* <GptFooter/> */}
     </div>
   );

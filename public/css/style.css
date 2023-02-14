@@ -551,15 +551,15 @@ li {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  margin-top: 15px;
-  color: var(--theme-color1);
+  margin-top: 45px;
+  color: #00c7c4;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
   -webkit-transition: none;
   transition: none;
-  content: "Loading";
+  content: "Welocome To Codesign Multimedia Institute";
 }
 
 /*=======================

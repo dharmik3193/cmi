@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Preloader from "../components/Preloader";
 
 const Courses = () => {
 
@@ -24,7 +26,7 @@ const Courses = () => {
     if (isdata) {
         return (
             <>
-            <Header id="2"/>
+                <Header id="2" />
                 <section
                     className="page-title"
                     style={{ backgroundImage: "url(images/background/page-title.jpg)" }}
@@ -98,8 +100,13 @@ const Courses = () => {
                     </div>
                 </section>
                 {/* End Courses Section*/}
+                <Footer />
             </>
 
+        )
+    } else {
+        return (
+            <><Preloader /></>
         )
     }
 }

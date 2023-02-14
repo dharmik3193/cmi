@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Abouthome from "../components/Abouthome";
 import Abouthome2 from "../components/Abouthome2";
@@ -6,13 +8,21 @@ import Catagories from "../components/Catagories";
 import Countdown from "../components/Countdown";
 import Coursehome from "../components/Coursehome";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import News from "../components/News";
+import Preloader from "../components/Preloader";
 import Signup from "../components/Signup";
 import Slider from "../components/Slider";
 import Testimonial from "../components/Testimonial";
 
 const Home = () => {
+    const [isLoading, setisLoading] = useState(true);
+    useEffect(() => {
+        setInterval(() => {
+            setisLoading(false)
+        }, 2000);
+    }, [])
 
     return (
         <>
@@ -24,7 +34,7 @@ const Home = () => {
                 <meta name="twitter:description" content="Codesign Multimedia is the #No 1 IT Training institute in Surat. Provide 100% Job Placement Guarantee. Join now Computer course in Surat" />
                 <title>React JS Course in Surat | React JS Training in Surat | React JS Jobs</title>
             </Helmet>
-            <Header id="1"/>
+            <Header id="1" />
             <Slider />
             <Abouthome />
             <Coursehome />
@@ -38,8 +48,10 @@ const Home = () => {
             {/* <Countdown /> */}
             <News />
             {/* <Client /> */}
+            <Footer />
         </>
     )
+
 }
 
 export default Home;
