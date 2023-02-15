@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Preloader from './Preloader';
 
 const Header = (props) => {
     const [isActive1, setIsActive1] = useState(false);
