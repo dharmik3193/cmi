@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Preloader from "../components/Preloader";
+import $ from 'jquery';
+
 
 const Courses = () => {
 
@@ -23,6 +25,13 @@ const Courses = () => {
                 console.log(error);
             })
     }, [])
+    useEffect(() => {
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
+        setInterval(() => {
+            setIsdata(true)
+        }, 1000);
+    })
     if (isdata) {
         return (
             <>

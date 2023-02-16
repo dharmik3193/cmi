@@ -31,13 +31,6 @@ function App() {
         var scrollLink = $('.scroll-to-top');
         var sticky_header = $('.main-header .sticky-header');
         // console.log(windowpos);
-        if (windowpos == 100) {
-          console.log(windowpos);
-          var mobileMenuContent = $('.main-header .main-menu .navigation').html();
-          $('.sticky-header .navigation').append(mobileMenuContent);
-          var mobileMenuContent = $('.main-header .main-menu .navigation').html();
-          $('.sticky-header .navigation').append(mobileMenuContent);
-        }
         if (windowpos > 100) {
           sticky_header.addClass("fixed-header animated slideInDown");
           scrollLink.fadeIn(300);

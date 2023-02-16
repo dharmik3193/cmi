@@ -4,6 +4,7 @@ import { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Preloader from "../components/Preloader";
+import $ from 'jquery';
 
 const Contact = () => {
 
@@ -15,10 +16,13 @@ const Contact = () => {
 
     const [isLoading, setisLoading] = useState(true);
     useEffect(() => {
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
         setInterval(() => {
             setisLoading(false)
-        }, 2000);
-    }, [])
+        }, 1000);
+
+    })
 
     const add_inquiry = (e) => {
         e.preventDefault()
