@@ -11,16 +11,16 @@ import $ from 'jquery';
 const About = () => {
     const [isLoading, setisLoading] = useState(true);
     useEffect(() => {
-
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
         setInterval(() => {
             setisLoading(false)
         }, 1000);
       loadScript()
 
-    }, [])
+    })
     var loadScript = function() {
-        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
-        $('.sticky-header .navigation').append(mobileMenuContent);
+        console.log("function");
       }
     if (!isLoading) {
         return (

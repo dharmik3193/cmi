@@ -11,13 +11,8 @@ const Blog = () => {
     const [blog, setBlog] = useState([]);
     const [isLoading, setisLoading] = useState(true);
 
-    var loadScript = function() {
-        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
-        $('.sticky-header .navigation').append(mobileMenuContent);
-      }
-      loadScript()
-
     useEffect(() => {
+        // window.addEventListener('scroll', loadScript);
         axios.get('https://cmiapi-kt1r.onrender.com/get_blog')
             .then(function (res) {
                 // handle success
@@ -28,16 +23,23 @@ const Blog = () => {
                 // handle error
                 console.log(error);
             })
-                setInterval(() => {
-                    setisLoading(false)
-                }, 2000);
-            
+        setInterval(() => {
+            setisLoading(false)
+        }, 2000);
+
     }, [])
-    if(!isLoading)
-    {
+
+    useEffect(() => {
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
+        setInterval(() => {
+            setisLoading(false)
+        }, 1000);
+    })
+    if (!isLoading) {
         return (
             <>
-            <Header id="4"/>
+                <Header id="4" />
                 <section
                     className="page-title"
                     style={{ backgroundImage: "url(images/background/page-title.jpg)" }}
@@ -102,18 +104,18 @@ const Blog = () => {
                                     )
                                 })
                             }
-    
+
                         </div>
                     </div>
                 </section>
                 {/*End News Section */}
-                            <Footer/>
+                <Footer />
             </>
-    
+
         )
-    }else{
-        return(
-            <><Preloader/></>
+    } else {
+        return (
+            <><Preloader /></>
         )
     }
 }
