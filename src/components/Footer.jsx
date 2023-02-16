@@ -97,9 +97,9 @@ const Footer = () => {
                                         <h4 className="widget-title">Explore</h4>
                                         <ul className="user-links">
                                             {
-                                                courses.map((item) => {
+                                                courses.map((item,index) => {
                                                     return (
-                                                        <li>
+                                                        <li key={index}>
                                                             <Link to={`/course/${item._id}`}>{item.title}</Link>
                                                         </li>
                                                     )

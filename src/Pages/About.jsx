@@ -15,76 +15,13 @@ const About = () => {
         setInterval(() => {
             setisLoading(false)
         }, 1000);
-
-
-        // Update Header Style and Scroll to Top
-        function headerStyle() {
-            if ($('.main-header').length) {
-                var windowpos = $(window).scrollTop();
-                var siteHeader = $('.header-style-one');
-                var scrollLink = $('.scroll-to-top');
-                var sticky_header = $('.main-header .sticky-header');
-
-                if (windowpos > 100) {
-                    sticky_header.addClass("fixed-header animated slideInDown");
-                    scrollLink.fadeIn(300);
-                } else {
-                    sticky_header.removeClass("fixed-header animated slideInDown");
-                    scrollLink.fadeOut(300);
-                    mobilenav()
-
-                }
-                if (windowpos > 1) {
-                    siteHeader.addClass("fixed-header");
-                } else {
-                    siteHeader.removeClass("fixed-header");
-                }
-            }
-        }
-        headerStyle();
-
-        //Mobile Nav Hide Show
-        function mobilenav() {
-            if ($('.mobile-menu').length) {
-
-                var mobileMenuContent = $('.main-header .main-menu .navigation').html();
-
-                $('.mobile-menu .navigation').append(mobileMenuContent);
-                $('.sticky-header .navigation').append(mobileMenuContent);
-                $('.mobile-menu .close-btn').on('click', function () {
-                    $('body').removeClass('mobile-menu-visible');
-                });
-
-                //Dropdown Button
-                $('.mobile-menu li.dropdown .dropdown-btn').on('click', function () {
-                    $(this).prev('ul').slideToggle(500);
-                    $(this).toggleClass('active');
-                });
-
-                //Menu Toggle Btn
-                $('.mobile-nav-toggler').on('click', function () {
-                    $('body').addClass('mobile-menu-visible');
-                });
-
-                //Menu Toggle Btn
-                $('.mobile-menu .menu-backdrop, .mobile-menu .close-btn').on('click', function () {
-                    $('body').removeClass('mobile-menu-visible');
-                });
-
-            }
-        }
-        mobilenav();
-
-
-        /* ==========================================================================
-     When document is Scrollig, do
-     ========================================================================== */
-
-        $(window).on('scroll', function () {
-            headerStyle();
-        });
+      loadScript()
 
     }, [])
+    var loadScript = function() {
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
+      }
     if (!isLoading) {
         return (
             <>

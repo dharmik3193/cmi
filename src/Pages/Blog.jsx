@@ -3,12 +3,19 @@ import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Preloader from "../components/Preloader";
+import $ from 'jquery';
+
 
 const Blog = () => {
 
     const [blog, setBlog] = useState([]);
     const [isLoading, setisLoading] = useState(true);
 
+    var loadScript = function() {
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
+      }
+      loadScript()
 
     useEffect(() => {
         axios.get('https://cmiapi-kt1r.onrender.com/get_blog')

@@ -17,13 +17,7 @@ import Slider from "../components/Slider";
 import Testimonial from "../components/Testimonial";
 
 const Home = () => {
-    const [isLoading, setisLoading] = useState(true);
-    useEffect(() => {
-        setInterval(() => {
-            setisLoading(false)
-        }, 2000);
-    }, [])
-
+    
     return (
         <>
             <Helmet>

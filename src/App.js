@@ -30,7 +30,7 @@ function App() {
         var siteHeader = $('.header-style-one');
         var scrollLink = $('.scroll-to-top');
         var sticky_header = $('.main-header .sticky-header');
-        console.log(windowpos);
+        // console.log(windowpos);
         if (windowpos > 100) {
           sticky_header.addClass("fixed-header animated slideInDown");
           scrollLink.fadeIn(300);
