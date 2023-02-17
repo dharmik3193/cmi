@@ -35,6 +35,7 @@ const Blog = () => {
         setInterval(() => {
             setisLoading(false)
         }, 1000);
+        $( ".clearfix li:nth-child(4)" ).addClass('current');
     })
     if (!isLoading) {
         return (

@@ -88,7 +88,7 @@ const Coursehome = () => {
                             <div className="image-box">
                               <figure className="image">
                                 <Link to={`course/${item._id}`}>
-                                  <img src={item.image} alt="" />
+                                  <img src={item.thumbnail} alt="" />
                                 </Link>
                               </figure>
                               {/* <span className="price">$49.00</span> */}

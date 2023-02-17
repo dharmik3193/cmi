@@ -2463,7 +2463,9 @@ Sticky Header
   color: #707070;
 }
 
-.sticky-header .main-menu .navigation > li.current > a,
+.sticky-header .main-menu .navigation > li.current > a{
+    color: var(--theme-color2);
+}
 .sticky-header .main-menu .navigation > li:hover > a {
   color: var(--theme-color2);
 }

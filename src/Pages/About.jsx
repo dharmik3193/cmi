@@ -16,12 +16,9 @@ const About = () => {
         setInterval(() => {
             setisLoading(false)
         }, 1000);
-      loadScript()
+        $( ".clearfix li:nth-child(3)" ).addClass('current');
 
     })
-    var loadScript = function() {
-        console.log("function");
-      }
     if (!isLoading) {
         return (
             <>

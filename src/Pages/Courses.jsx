@@ -11,6 +11,7 @@ const Courses = () => {
 
     const [course, setCourse] = useState([]);
     const [isdata, setIsdata] = useState(false);
+    const [isloading, setIsloading] = useState(false);
 
     useEffect(() => {
         axios.get('https://cmiapi-kt1r.onrender.com/getall_courses')
@@ -28,11 +29,13 @@ const Courses = () => {
     useEffect(() => {
         var mobileMenuContent = $('.main-header .main-menu .navigation').html();
         $('.sticky-header .navigation').append(mobileMenuContent);
+
+        $(".clearfix li:nth-child(2)").addClass('current');
         setInterval(() => {
-            setIsdata(true)
+            setIsloading(true)
         }, 1000);
     })
-    if (isdata) {
+    if (isdata && isloading) {
         return (
             <>
                 <Header id="2" />
@@ -69,9 +72,9 @@ const Courses = () => {
                                                 <div className="inner-box">
                                                     <div className="image-box">
                                                         <figure className="image">
-                                                            <a href="page-course-details.html">
-                                                                <img src={item.image} alt="" />
-                                                            </a>
+                                                            <Link to={`/course/${item._id}`}>
+                                                                <img src={item.thumbnail} alt="" />
+                                                            </Link>
                                                         </figure>
                                                         <div className="value">{item.level}</div>
                                                     </div>

@@ -15,8 +15,14 @@ import Preloader from "../components/Preloader";
 import Signup from "../components/Signup";
 import Slider from "../components/Slider";
 import Testimonial from "../components/Testimonial";
+import $ from 'jquery';
 
 const Home = () => {
+
+    useEffect(() => {
+        $( ".clearfix li:nth-child(1)" ).addClass('current');
+    }, [])
+    
     
     return (
         <>

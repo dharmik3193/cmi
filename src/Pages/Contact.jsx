@@ -18,6 +18,8 @@ const Contact = () => {
     useEffect(() => {
         var mobileMenuContent = $('.main-header .main-menu .navigation').html();
         $('.sticky-header .navigation').append(mobileMenuContent);
+        $( ".clearfix li:nth-child(5)" ).addClass('current');
+
         setInterval(() => {
             setisLoading(false)
         }, 1000);
