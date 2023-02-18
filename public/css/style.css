@@ -5734,9 +5734,9 @@ Section Title
 .testimonial-block .content-box .thumb {
   position: absolute;
   right: 40px;
-  top: -70px;
-  height: 140px;
-  width: 140px;
+  top: -50px;
+  height: 100px;
+  width: 100px;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
