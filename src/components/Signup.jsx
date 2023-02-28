@@ -100,9 +100,9 @@ const Signup = () => {
                                                 <select className="custom-select" value={addcourse} onChange={(e)=>{setAddcourse(e.target.value)}}>
                                                     <option value="">Select course</option>
                                                     {
-                                                        course.map((item)=>{
+                                                        course.map((item,index)=>{
                                                             return(
-                                                                <option value={item.title}>{item.title}</option>
+                                                                <option value={item.title} key={index}>{item.title}</option>
                                                             )
                                                         })
                                                     }

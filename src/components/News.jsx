@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const News = () => {
     const [blog, setBlog] = useState([]);
@@ -31,17 +32,17 @@ const News = () => {
                     </div>
                     <div className="row">
                         {
-                            blog.map((item) => {
+                            blog.map((item, index) => {
                                 return (
                                     <>
                                         {/* News Block */}
-                                        <div className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp">
+                                        <div className="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" key={index}>
                                             <div className="inner-box">
                                                 <div className="image-box">
                                                     <figure className="image">
-                                                        <a href="news-details.html">
-                                                            <img src={item.image} alt="" />
-                                                        </a>
+                                                        <Link to={`/blog/${item._id}`}>
+                                                            <img src={item.thumbnail} alt="" />
+                                                        </Link>
                                                     </figure>
                                                     <span className="date">
                                                         {item.date}
@@ -58,13 +59,13 @@ const News = () => {
                                                             </li>
                                                         </ul>
                                                         <h4 className="title">
-                                                            <a href="news-details.html">
+                                                            <Link to={`/blog/${item._id}`}>
                                                                 {item.title}
-                                                            </a>
+                                                            </Link>
                                                         </h4>
-                                                        <a href="news-details.html" className="read-more">
+                                                        <Link to={`/blog/${item._id}`} className="read-more">
                                                             Read More <i className="fa fa-long-arrow-alt-right" />
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </div>

@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Preloader from "../components/Preloader";
 import $ from 'jquery';
+import { Link } from "react-router-dom";
 
 
 const Blog = () => {
@@ -35,7 +36,7 @@ const Blog = () => {
         setInterval(() => {
             setisLoading(false)
         }, 1000);
-        $( ".clearfix li:nth-child(4)" ).addClass('current');
+        $(".clearfix li:nth-child(4)").addClass('current');
     })
     if (!isLoading) {
         return (
@@ -63,17 +64,17 @@ const Blog = () => {
                     <div className="container pb-70">
                         <div className="row">
                             {
-                                blog.map((item) => {
+                                blog.map((item, i) => {
                                     return (
                                         <>
                                             {/* News Block */}
-                                            <div className="news-block col-lg-4 col-md-6 col-sm-12">
+                                            <div key={i} className="news-block col-lg-4 col-md-6 col-sm-12">
                                                 <div className="inner-box">
                                                     <div className="image-box">
                                                         <figure className="image">
-                                                            <a href="news-details.html">
-                                                                <img src={item.image} alt="" />
-                                                            </a>
+                                                            <Link to={`/blog/${item._id}`}>
+                                                                <img src={item.thumbnail} alt="" />
+                                                            </Link>
                                                         </figure>
                                                         <span className="date">
                                                             {item.date}
@@ -90,13 +91,13 @@ const Blog = () => {
                                                                 </li>
                                                             </ul>
                                                             <h4 className="title">
-                                                                <a href="news-details.html">
+                                                                <Link to={`/blog/${item._id}`}>
                                                                     {item.title}
-                                                                </a>
+                                                                </Link>
                                                             </h4>
-                                                            <a href="news-details.html" className="read-more">
+                                                            <Link to={`/blog/${item._id}`} className="read-more">
                                                                 Read More <i className="fa fa-long-arrow-alt-right" />
-                                                            </a>
+                                                            </Link>
                                                         </div>
                                                     </div>
                                                 </div>

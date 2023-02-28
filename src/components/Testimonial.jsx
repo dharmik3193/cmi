@@ -72,9 +72,9 @@ const Testimonial = () => {
                                 >
 
                                     {
-                                        review.map((item) => {
+                                        review.map((item,index) => {
                                             return (
-                                                <div className="testimonial-block">
+                                                <div className="testimonial-block" key={index}>
                                                     <div className="inner-box">
                                                         <div className="content-box">
                                                             <figure className="thumb">

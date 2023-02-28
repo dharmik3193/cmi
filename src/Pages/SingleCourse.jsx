@@ -94,7 +94,7 @@ const SingleCourse = () => {
                                             name="full_name"
                                             className="model-form"
                                             placeholder="Your name"
-                                            required=""
+                                            required={true}
                                             defaultValue=""
                                             value={name}
                                             onChange={(e) => { setName(e.target.value) }}
@@ -106,7 +106,7 @@ const SingleCourse = () => {
                                             name="Email"
                                             className="model-form"
                                             placeholder="Mobile Number"
-                                            required=""
+                                            required={true}
                                             defaultValue=""
                                             value={email}
                                             onChange={(e) => { setEmail(e.target.value) }}
@@ -116,9 +116,9 @@ const SingleCourse = () => {
                                         <select className="custom-select model-form" value={addcourse} onChange={(e)=>{setAddcourse(e.target.value)}}>
                                             <option value="">Select course</option>
                                             {
-                                                courses.map((item) => {
+                                                courses.map((item,i) => {
                                                     return (
-                                                        <option value={item.title}>{item.title}</option>
+                                                        <option key={i} value={item.title}>{item.title}</option>
                                                     )
                                                 })
                                             }
@@ -304,10 +304,10 @@ const SingleCourse = () => {
                                     <div className="latest-course mb-30">
                                         <h4 className="latest-course-title mb-30">New Courses</h4>
                                         {
-                                            courses.map((item) => {
+                                            courses.map((item,i) => {
                                                 return (
                                                     <>
-                                                        <div className="latest-course-item">
+                                                        <div className="latest-course-item" key={i}>
                                                             <div className="latest-course-img">
                                                                 <img src={item.image} alt="" />
                                                             </div>

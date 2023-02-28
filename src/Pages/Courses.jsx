@@ -65,10 +65,10 @@ const Courses = () => {
                         <div className="row">
                             {/* Course Block Two*/}
                             {
-                                course.map((item) => {
+                                course.map((item,index) => {
                                     return (
                                         <>
-                                            <div className="course-block-two col-lg-3 col-md-6 col-sm-12">
+                                            <div className="course-block-two col-lg-3 col-md-6 col-sm-12" key={index}>
                                                 <div className="inner-box">
                                                     <div className="image-box">
                                                         <figure className="image">

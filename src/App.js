@@ -12,6 +12,7 @@ import Blog from './Pages/Blog';
 import { Route, Routes } from 'react-router-dom';
 import SingleCourse from './Pages/SingleCourse';
 import Preloader from './components/Preloader';
+import SingleBlog from './Pages/SingleBlog';
 
 function App() {
 
@@ -350,6 +351,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path='/course/:id' element={<SingleCourse />} />
+        <Route path='/blog/:id' element={<SingleBlog />} />
 
       </Routes>
       {/* <Preloader /> */}

@@ -315,13 +315,13 @@ iframe {
   width: 100%;
 }
 
-.container .container,
+/* .container .container,
 .container .container-fluid,
 .container-fluid .container,
 .container-fluid .container-fluid {
   padding-left: 0;
   padding-right: 0;
-}
+} */
 
 section > .container,
 section > .container-fluid {
@@ -2275,7 +2275,7 @@ Header Style One
   position: relative;
   min-width: 375px;
   min-height: 90px;
-  padding: 20px 40px;
+  /* padding: 20px 40px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

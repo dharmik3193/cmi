@@ -96,7 +96,7 @@ const Contact = () => {
                                     method="post"
                                 >
                                     <div className="row">
-                                        <div className="col-sm-6">
+                                        <div className="col-sm-6 p-right">
                                             <div className="mb-3">
                                                 <input
                                                     name="form_name"
@@ -108,7 +108,7 @@ const Contact = () => {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="col-sm-6">
+                                        <div className="col-sm-6 p-left">
                                             <div className="mb-3">
                                                 <input
                                                     name="form_email"
@@ -122,7 +122,7 @@ const Contact = () => {
                                         </div>
                                     </div>
                                     <div className="row">
-                                        <div className="col-sm-6">
+                                        <div className="col-sm-6 p-right ">
                                             <div className="mb-3">
                                                 <input
                                                     name="form_subject"
@@ -134,7 +134,7 @@ const Contact = () => {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="col-sm-6">
+                                        <div className="col-sm-6 p-left">
                                             <div className="mb-3">
                                                 <input
                                                     name="form_phone"
@@ -155,7 +155,6 @@ const Contact = () => {
                                             value={message}
                                             onChange={(e) => { setMessage(e.target.value) }}
                                             placeholder="Enter Message"
-                                            defaultValue={""}
                                         />
                                     </div>
                                     <div className="mb-3">
@@ -163,7 +162,6 @@ const Contact = () => {
                                             name="form_botcheck"
                                             className="form-control"
                                             type="hidden"
-                                            defaultValue=""
                                         />
                                         <button
                                             type="button"

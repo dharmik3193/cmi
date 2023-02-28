@@ -187,7 +187,7 @@ const Header = (props) => {
                     {/* End Header Search */}
                     {/* Sticky Header  */}
                     <div className="sticky-header">
-                        <div className="auto-container">
+                        <div className="container">
                             <div className="inner-container">
                                 {/*Logo*/}
                                 <div className="logo">
