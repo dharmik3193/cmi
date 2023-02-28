@@ -55,7 +55,7 @@ const Coursehome = () => {
       <>
         {/* Courses Section */}
         <section className="courses-section">
-          <div className="auto-container">
+          <div className="container">
             <div className="anim-icons">
               <span className="icon icon-e wow zoomIn" />
             </div>

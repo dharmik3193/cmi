@@ -7,7 +7,7 @@ const Features = () => {
         <>
             {/* Features Section */}
             <section className="features-section">
-                <div className="auto-container">
+                <div className="container">
                     <div className="row">
                         {/* Feature Block */}
                         <div className="feature-block col-lg-3 col-md-6 col-sm-6 wow fadeInUp">

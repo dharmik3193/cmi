@@ -43,7 +43,7 @@ const Courses = () => {
                     className="page-title"
                     style={{ backgroundImage: "url(images/background/page-title.jpg)" }}
                 >
-                    <div className="auto-container">
+                    <div className="container">
                         <div className="title-outer">
                             <h1 className="title">Courses</h1>
                             <ul className="page-breadcrumb">

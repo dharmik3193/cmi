@@ -22,7 +22,7 @@ const News = () => {
         <>
             {/* News Section */}
             <section className="news-section">
-                <div className="auto-container">
+                <div className="container">
                     <div className="sec-title text-center">
                         <span className="sub-title">directly from blog</span>
                         <h2>

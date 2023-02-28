@@ -7,7 +7,7 @@ const Abouthome2 = () => {
                     <span className="icon icon-e wow zoomIn" />
                     <span className="icon icon-dots-2 bounce-x" />
                 </div>
-                <div className="auto-container">
+                <div className="container">
                     <div className="row">
                         <div
                             className="content-column col-lg-6 col-md-12 order-2 wow fadeInRight"

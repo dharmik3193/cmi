@@ -13,7 +13,7 @@ const C2a = () => {
                     <span className="icon icon-pin-clip zoom-one" />
                     <span className="icon icon-dots" />
                 </div>
-                <div className="auto-container">
+                <div className="container">
                     <div className="row">
                         <div className="title-column col-lg-8 col-md-12">
                             <div className="inner-column">

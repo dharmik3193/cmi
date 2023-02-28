@@ -3,7 +3,7 @@ const Team = () => {
         <>
             {/* Team Section */}
             <section className="team-section">
-                <div className="auto-container">
+                <div className="container">
                     <div className="sec-title text-center">
                         <span className="sub-title">qualified teachers</span>
                         <h2>

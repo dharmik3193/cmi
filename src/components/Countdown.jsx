@@ -75,7 +75,7 @@ const Countdown = () => {
                     className="bg-image zoom-two"
                     style={{ backgroundImage: "url(./images/background/2.jpg)" }}
                 />
-                <div className="auto-container">
+                <div className="container">
                     <div className="content-box">
                         <div className="sec-title light text-center">
                             <span className="sub-title">Book your seat now</span>

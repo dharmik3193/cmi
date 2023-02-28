@@ -177,7 +177,7 @@ const Footer = () => {
                     </div>
                     {/*Footer Bottom*/}
                     <div className="footer-bottom">
-                        <div className="auto-container">
+                        <div className="container">
                             <div className="inner-container">
                                 <div className="copyright-text">
                                     © Copyright 2023 by <a href="index.html">Codesign Multimedia Institute</a>

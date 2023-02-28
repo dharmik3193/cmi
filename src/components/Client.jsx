@@ -32,7 +32,7 @@ const Client = () => {
         <>
             {/* Clients Section   */}
             <section className="clients-section">
-                <div className="auto-container">
+                <div className="container">
                     {/* Sponsors Outer */}
                     <div className="sponsors-outer">
                         {/*clients carousel*/}

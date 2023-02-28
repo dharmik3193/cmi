@@ -46,7 +46,7 @@ const Signup = () => {
         <>
             {/* Signup Section */}
             <section className="signup-section">
-                <div className="auto-container">
+                <div className="container">
                     <div className="anim-icons">
                         <span className="icon icon-paper-clip bounce-x" />
                     </div>

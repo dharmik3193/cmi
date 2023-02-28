@@ -41,7 +41,7 @@ const Testimonial = () => {
                 <div className="anim-icons">
                     <span className="icon icon-dotted-map-2" />
                 </div>
-                <div className="auto-container">
+                <div className="container">
                     <div className="row">
                         {/* Title Column */}
                         <div className="title-column col-xl-4 col-lg-5 col-md-12">

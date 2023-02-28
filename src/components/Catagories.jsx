@@ -7,7 +7,7 @@ const Catagories = () => {
         <>
             {/* Categories Section */}
             <section className="categories-section-current">
-                <div className="auto-container">
+                <div className="container">
                     <div className="anim-icons">
                         <span className="icon icon-group-1 bounce-y" />
                         <span className="icon icon-group-2 bounce-y" />
