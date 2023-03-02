@@ -106,8 +106,8 @@ License: copyright commercial
   --container-width: 1200px;
   --small-container-width: 1000px;
   --large-container-width: 1550px;
-  --container-pt: 120px;
-  --container-pb: 120px;
+  --container-pt: 80px;
+  --container-pb: 80px;
 }
 
 /*
@@ -326,7 +326,7 @@ iframe {
 section > .container,
 section > .container-fluid {
   padding-top: var(--container-pt);
-  padding-bottom: var(--container-pt);
+  /* padding-bottom: var(--container-pt); */
 }
 
 @media (min-width: 1400px) {
@@ -2950,12 +2950,13 @@ Section Title
 .about-section .image-column .inner-column {
   position: relative;
   padding-right: 50px;
-  margin-left: -150px;
+  /* margin-left: -150px; */
 }
 .about-section .image-column .image-1 {
   position: relative;
   max-width: 460px;
   margin-bottom: 0px;
+  z-index: 0;
 }
 .about-section .image-column .image-1 img {
   width: 100%;
@@ -3015,7 +3016,7 @@ Section Title
 ***/
 .about-section-two {
   position: relative;
-  padding: 120px 0 70px;
+  /* padding: 120px 0 70px; */
 }
 .about-section-two .icon-e {
   left: -190px;
@@ -3449,7 +3450,7 @@ Section Title
 ***/
 .courses-section {
   position: relative;
-  padding: 120px 0 90px;
+  /* padding: 120px 0 90px; */
   z-index: 1;
 }
 .courses-section .icon-e {
@@ -3873,7 +3874,7 @@ Section Title
 ***/
 .features-section {
   position: relative;
-  padding: 80px 0 30px;
+  /* padding: 80px 0 30px; */
   background-color: var(--bg-theme-color3);
   z-index: 2;
 }
@@ -4022,7 +4023,7 @@ Section Title
 ***/
 .categories-section-current {
   position: relative;
-  padding: 120px 0 70px;
+  /* padding: 120px 0 70px; */
   background-color: #f1f7f7;
 }
 .categories-section-current .icon-group-1 {
@@ -5972,7 +5973,7 @@ Section Title
 ***/
 .news-section {
   position: relative;
-  padding: 120px 0 70px;
+  /* padding: 120px 0 70px; */
   overflow: hidden;
 }
 
@@ -6223,10 +6224,10 @@ Section Title
   border-top: 1px solid #dae6e6;
 }
 
-.clients-carousel {
+/* .clients-carousel {
   position: relative;
   padding: 85px 0;
-}
+} */
 
 .clients-carousel .slide-item {
   position: relative;
@@ -8059,7 +8060,7 @@ Page Title
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 100px 0 110px;
+  padding: 0px 0 10px;
   min-height: 250px;
 }
 .page-title:before {
@@ -8075,7 +8076,7 @@ Page Title
 .page-title .title {
   font-size: 64px;
   color: #ffffff;
-  margin-bottom: 17px;
+  /* margin-bottom: 17px; */
 }
 .page-title .text {
   position: relative;
@@ -10674,7 +10675,7 @@ Sidebar
 /* Widget Section */
 .main-footer .widgets-section {
   position: relative;
-  padding: 120px 0 80px;
+  padding: 50px 0 0px;
 }
 .main-footer .footer-column {
   position: relative;

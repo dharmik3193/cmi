@@ -61,7 +61,7 @@ const Blog = () => {
                 {/* end main-content */}
                 {/* News Section */}
                 <section className="">
-                    <div className="container pb-70">
+                    <div className="container pb-20">
                         <div className="row">
                             {
                                 blog.map((item, i) => {

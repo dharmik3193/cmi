@@ -229,7 +229,7 @@ const Contact = () => {
                 {/*Contact Details End*/}
                 {/* Divider: Google Map */}
                 <section>
-                    <div className="container-fluid p-0">
+                    <div className="container-fluid p-0 mb-3">
                         <div className="row">
                             {/* Google Map HTML Codes */}
                             <iframe

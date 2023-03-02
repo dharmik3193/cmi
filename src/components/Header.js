@@ -36,9 +36,10 @@ const Header = (props) => {
             <header className="main-header header-style-one">
                 <div className="container">
                     {/* Main box */}
-                    <div className="main-box">
-                        <div className="row justify-content-between">
-                            <div className="logo-box col-6">
+                    {/* <div className="main-box"> */}
+                    <div>
+                        <div className="row align-items-center justify-content-between">
+                            <div className="logo-box col-xl-7 col-lg-6 col-10">
                                 <div className="logo">
                                     <Link to={'/'} onClick={() => { window.location.reload(false) }}>
                                         <img src={require('../Assets/codesign.webp')} alt="Codesign Logo" title="Codesign" />
@@ -46,7 +47,7 @@ const Header = (props) => {
                                 </div>
                             </div>
                             {/*Nav Box*/}
-                            <div className="nav-outer col-6">
+                            <div className="nav-outer col-xl-5 col-lg-6 col-2">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
                                         <li className={isActive1 ? "current" : ""} onClick={() => { window.location.reload(false) }}>
@@ -64,6 +65,8 @@ const Header = (props) => {
                                         <li className={isActive5 ? "current" : ""}>
                                             <Link to='/contact'>Contact</Link>
                                         </li>
+                                        
+
                                     </ul>
                                 </nav>
                                 {/* Main Menu End*/}

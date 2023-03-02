@@ -124,7 +124,7 @@
 
 	.mobile-nav-toggler {
 		display: block;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 
 	.main-header .ui-btn {
@@ -139,7 +139,7 @@
 	}
 
 	.main-slider h1 {
-		font-size: 72px;
+		font-size: 64px;
 		letter-spacing: 0;	
 	}
 

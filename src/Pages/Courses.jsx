@@ -61,7 +61,7 @@ const Courses = () => {
                 {/* end main-content */}
                 {/* Courses Section */}
                 <section className="">
-                    <div className="container pb-100">
+                    <div className="container pb-50">
                         <div className="row">
                             {/* Course Block Two*/}
                             {
