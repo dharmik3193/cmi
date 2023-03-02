@@ -4213,6 +4213,7 @@ Section Title
 }
 .category-block-current-two .title {
   margin-bottom: 10px;
+  font-size: 1.4rem !important;
 }
 .category-block-current-two .title:hover {
   color: var(--theme-color2);
