@@ -147,7 +147,7 @@ const Contact = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="mb-3">
+                                    <div className="row">
                                         <textarea
                                             name="form_message"
                                             className="form-control required"
@@ -202,7 +202,7 @@ const Contact = () => {
                                                 </a>
                                             </div>
                                         </li>
-                                        <li className="row">
+                                        <li>
                                             <div className="icon col-6">
                                                 <span className="lnr-icon-envelope1" />
                                             </div>

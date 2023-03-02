@@ -6,6 +6,9 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Modal from 'react-bootstrap/Modal';
+import { Accordion } from "react-bootstrap";
+import $ from 'jquery';
+
 
 const SingleCourse = () => {
 
@@ -17,6 +20,8 @@ const SingleCourse = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [addcourse, setAddcourse] = useState('');
+    // const [isLoading, setisLoading] = useState(false);
+
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -49,6 +54,17 @@ const SingleCourse = () => {
                 console.log(error);
             })
     }, [])
+
+    useEffect(() => {
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
+        $( ".clearfix li:nth-child(5)" ).addClass('current');
+
+        // setInterval(() => {
+        //     setisLoading(true)
+        // }, 1000);
+
+    })
 
     const add_inquiry = (e) => {
         e.preventDefault()
@@ -113,10 +129,10 @@ const SingleCourse = () => {
                                         />
                                     </div>
                                     <div className="form-group">
-                                        <select className="custom-select model-form" value={addcourse} onChange={(e)=>{setAddcourse(e.target.value)}}>
+                                        <select className="custom-select model-form" value={addcourse} onChange={(e) => { setAddcourse(e.target.value) }}>
                                             <option value="">Select course</option>
                                             {
-                                                courses.map((item,i) => {
+                                                courses.map((item, i) => {
                                                     return (
                                                         <option key={i} value={item.title}>{item.title}</option>
                                                     )
@@ -231,54 +247,54 @@ const SingleCourse = () => {
                                         >
                                             {/*Block*/}
                                             <li className="accordion block">
-                                                <div className="acc-btn">
-                                                    Is my technology allowed on tech?
-                                                    <div className="icon fa fa-plus" />
-                                                </div>
-                                                <div className="acc-content" style={{ display: "none" }}>
-                                                    <div className="content">
-                                                        <div className="text">
-                                                            There are many variations of passages the majority have
-                                                            suffered alteration in some fo injected humour, or
-                                                            randomised words believable.
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <Accordion defaultActiveKey="0" className="acc-btn">
+                                                    <Accordion.Item eventKey="0" >
+                                                        <Accordion.Header>Accordion Item #1</Accordion.Header>
+                                                        <Accordion.Body>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                            culpa qui officia deserunt mollit anim id est laborum.
+                                                        </Accordion.Body>
+                                                    </Accordion.Item>
+                                                </Accordion>
                                             </li>
                                             {/*Block*/}
                                             <li className="accordion block">
-                                                <div className="acc-btn">
-                                                    How to soft launch your business?
-                                                    <div className="icon fa fa-plus" />
-                                                </div>
-                                                <div
-                                                    className="acc-content current"
-                                                    style={{ display: "none" }}
-                                                >
-                                                    <div className="content">
-                                                        <div className="text">
-                                                            There are many variations of passages the majority have
-                                                            suffered alteration in some fo injected humour, or
-                                                            randomised words believable.
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <Accordion defaultActiveKey="1" className="acc-btn">
+                                                    <Accordion.Item eventKey="0" >
+                                                        <Accordion.Header>Accordion Item #1</Accordion.Header>
+                                                        <Accordion.Body>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                            culpa qui officia deserunt mollit anim id est laborum.
+                                                        </Accordion.Body>
+                                                    </Accordion.Item>
+                                                </Accordion>
                                             </li>
                                             {/*Block*/}
-                                            <li className="accordion block active-block">
-                                                <div className="acc-btn active">
-                                                    How to turn visitors into contributors
-                                                    <div className="icon fa fa-plus" />
-                                                </div>
-                                                <div className="acc-content" style={{ display: "block" }}>
-                                                    <div className="content">
-                                                        <div className="text">
-                                                            There are many variations of passages the majority have
-                                                            suffered alteration in some fo injected humour, or
-                                                            randomised words believable.
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <li className="accordion block">
+                                                <Accordion defaultActiveKey="1" className="acc-btn">
+                                                    <Accordion.Item eventKey="0" >
+                                                        <Accordion.Header>Accordion Item #1</Accordion.Header>
+                                                        <Accordion.Body>
+                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                                            culpa qui officia deserunt mollit anim id est laborum.
+                                                        </Accordion.Body>
+                                                    </Accordion.Item>
+                                                </Accordion>
                                             </li>
                                         </ul>
                                     </div>
@@ -304,7 +320,7 @@ const SingleCourse = () => {
                                     <div className="latest-course mb-30">
                                         <h4 className="latest-course-title mb-30">New Courses</h4>
                                         {
-                                            courses.map((item,i) => {
+                                            courses.map((item, i) => {
                                                 return (
                                                     <>
                                                         <div className="latest-course-item" key={i}>
