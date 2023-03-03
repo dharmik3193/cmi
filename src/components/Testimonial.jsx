@@ -74,7 +74,7 @@ const Testimonial = () => {
                                     {
                                         review.map((item,index) => {
                                             return (
-                                                <div className="testimonial-block" key={index}>
+                                                <div className="testimonial-block">
                                                     <div className="inner-box">
                                                         <div className="content-box">
                                                             <figure className="thumb">
@@ -140,8 +140,6 @@ const Testimonial = () => {
                                             )
                                         })
                                     }
-
-
                                 </OwlCarousel>
                             </div>
                         </div>
