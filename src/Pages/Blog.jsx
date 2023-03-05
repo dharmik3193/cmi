@@ -14,7 +14,7 @@ const Blog = () => {
 
     useEffect(() => {
         // window.addEventListener('scroll', loadScript);
-        axios.get('https://cmiapi-kt1r.onrender.com/get_blog')
+        axios.get('http://54.199.201.46:8000/get_blog')
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);

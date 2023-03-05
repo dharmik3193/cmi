@@ -8,7 +8,7 @@ const Footer = () => {
     const [email, setEmail] = useState('')
     const subscribe = (e) => {
         e.preventDefault()
-        axios.post('https://cmiapi-kt1r.onrender.com/add_newsletter', {
+        axios.post('http://54.199.201.46:8000/add_newsletter', {
             email: email
         })
             .then(function (res) {
@@ -24,7 +24,7 @@ const Footer = () => {
 
     useEffect(() => {
 
-        axios.get(`https://cmiapi-kt1r.onrender.com/getall_courses`)
+        axios.get(`http://54.199.201.46:8000/getall_courses`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);

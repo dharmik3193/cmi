@@ -17,7 +17,7 @@ const Testimonial = () => {
 
     useEffect(() => {
 
-        axios.get(`https://cmiapi-kt1r.onrender.com/get_review`)
+        axios.get(`http://54.199.201.46:8000/get_review`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);
