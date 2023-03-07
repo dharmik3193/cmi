@@ -6,7 +6,7 @@ const News = () => {
     const [blog, setBlog] = useState([]);
 
     useEffect(() => {
-        axios.get('http://54.199.201.46:8000/get_blog')
+        axios.get('https://cmiapi-kt1r.onrender.com/get_blog')
             .then(function (res) {
                 for (var i = 0; i < res.data.data.length; i++) {
                     setBlog(res.data.data.slice(0, 3))

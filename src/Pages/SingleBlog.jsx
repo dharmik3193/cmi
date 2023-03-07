@@ -17,7 +17,7 @@ const SingleBlog = () => {
 
     useEffect(() => {
         console.log(params.id);
-        axios.get(`http://54.199.201.46:8000/blog/${params.id}`)
+        axios.get(`https://cmiapi-kt1r.onrender.com/blog/${params.id}`)
             .then(function (res) {
                 // handle success
                 console.log(res.data);
@@ -29,7 +29,7 @@ const SingleBlog = () => {
                 console.log(error);
             })
 
-        axios.get(`http://54.199.201.46:8000/get_blog`)
+        axios.get(`https://cmiapi-kt1r.onrender.com/get_blog`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);

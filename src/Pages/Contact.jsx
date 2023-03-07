@@ -28,7 +28,7 @@ const Contact = () => {
 
     const add_inquiry = (e) => {
         e.preventDefault()
-        axios.post('http://54.199.201.46:8000/contact', {
+        axios.post('https://cmiapi-kt1r.onrender.com/contact', {
             name: name,
             email: email,
             subject: subject,

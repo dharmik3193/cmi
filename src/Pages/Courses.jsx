@@ -14,7 +14,7 @@ const Courses = () => {
     const [isloading, setIsloading] = useState(false);
 
     useEffect(() => {
-        axios.get('http://54.199.201.46:8000/getall_courses')
+        axios.get('https://cmiapi-kt1r.onrender.com/getall_courses')
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);

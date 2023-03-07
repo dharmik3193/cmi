@@ -30,7 +30,7 @@ const SingleCourse = () => {
 
     useEffect(() => {
         console.log(params.id);
-        axios.get(`http://54.199.201.46:8000/course/${params.id}`)
+        axios.get(`https://cmiapi-kt1r.onrender.com/course/${params.id}`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);
@@ -42,7 +42,7 @@ const SingleCourse = () => {
                 console.log(error);
             })
 
-        axios.get(`http://54.199.201.46:8000/getall_courses`)
+        axios.get(`https://cmiapi-kt1r.onrender.com/getall_courses`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);
@@ -68,7 +68,7 @@ const SingleCourse = () => {
 
     const add_inquiry = (e) => {
         e.preventDefault()
-        axios.post('http://54.199.201.46:8000/add_inquiry', {
+        axios.post('https://cmiapi-kt1r.onrender.com/add_inquiry', {
             name: name,
             email: email,
             course: addcourse

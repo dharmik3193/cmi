@@ -10,7 +10,7 @@ const Signup = () => {
 
     useEffect(() => {
 
-        axios.get('http://54.199.201.46:8000/getall_courses')
+        axios.get('https://cmiapi-kt1r.onrender.com/getall_courses')
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);
@@ -25,7 +25,7 @@ const Signup = () => {
 
     const add_inquiry = (e) => {
         e.preventDefault()
-        axios.post('http://54.199.201.46:8000/add_inquiry', {
+        axios.post('https://cmiapi-kt1r.onrender.com/add_inquiry', {
             name:name,
             email:email,
             course:addcourse
