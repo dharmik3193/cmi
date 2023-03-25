@@ -34,7 +34,6 @@ const Coursehome = () => {
   useEffect(() => {
     axios.get('https://attractive-gold-wetsuit.cyclic.app/getall_courses')
       .then(function (res) {
-        console.log(res.data.data);
         setCourse(res.data.data)
         setIsdata(true)
       })

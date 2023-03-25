@@ -11,7 +11,6 @@ const News = () => {
                 for (var i = 0; i < res.data.data.length; i++) {
                     setBlog(res.data.data.slice(0, 3))
                 }
-                console.log(blog);
             })
             .catch(function (error) {
                 console.log(error);

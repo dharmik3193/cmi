@@ -55,7 +55,6 @@ function App() {
       if ($('.mobile-menu').length) {
 
         var mobileMenuContent = $('.main-header .main-menu .navigation').html();
-        console.log(mobileMenuContent);
         $('.mobile-menu .navigation').append(mobileMenuContent);
         $('.sticky-header .navigation').append(mobileMenuContent);
         $('.mobile-menu .close-btn').on('click', function () {

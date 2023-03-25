@@ -38,10 +38,12 @@ const SingleBlog = () => {
             })
     }, [])
 
+    useEffect(() => {
         var mobileMenuContent = $('.main-header .main-menu .navigation').html();
         $('.sticky-header .navigation').append(mobileMenuContent);
-        $(".clearfix li:nth-child(4)").addClass('current');
+        $( ".clearfix li:nth-child(4)" ).addClass('current');
 
+    })
 
 
     if(isData && isallData)

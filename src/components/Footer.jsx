@@ -26,7 +26,6 @@ const Footer = () => {
 
         axios.get(`https://attractive-gold-wetsuit.cyclic.app/getall_courses`)
             .then(function (res) {
-                console.log(res.data.data);
                 setCourses(res.data.data)
                 setIsalldata(true)
             })
