@@ -15,20 +15,15 @@ const Coursehome = () => {
   );
   const [course, setCourse] = useState([]);
   const [isdata, setIsdata] = useState(false);
-  // var screen;
   const handleResize = () => {
     if (window.innerWidth <= 1024 && window.innerWidth > 768) {
       setscreen(3);
-      // screen=3;
     } else if (window.innerWidth <= 768 && window.innerWidth > 579) {
       setscreen(2);
-      // screen=2
     } else if (window.innerWidth <= 579 && window.innerWidth > 0) {
       setscreen(1);
-      // screen=1
     } else {
       setscreen(4);
-      // screen=4
     }
   };
 
@@ -39,13 +34,11 @@ const Coursehome = () => {
   useEffect(() => {
     axios.get('https://attractive-gold-wetsuit.cyclic.app/getall_courses')
       .then(function (res) {
-        // handle success
         console.log(res.data.data);
         setCourse(res.data.data)
         setIsdata(true)
       })
       .catch(function (error) {
-        // handle error
         console.log(error);
       })
   }, [])
@@ -69,7 +62,6 @@ const Coursehome = () => {
             </div>
             <div className="carousel-outer">
               {/* Courses Carousel */}
-              {/* <div className="courses-carousel owl-carousel owl-theme default-nav"> */}
               <OwlCarousel
                 items={screen}
                 className="owl-theme clients-carousel"
@@ -91,7 +83,6 @@ const Coursehome = () => {
                                   <img src={item.thumbnail} alt="" />
                                 </Link>
                               </figure>
-                              {/* <span className="price">$49.00</span> */}
                               <div className="value">{item.level}</div>
                             </div>
                             <div className="content-box">
@@ -124,17 +115,10 @@ const Coursehome = () => {
                 }
 
               </OwlCarousel>
-              {/* </div> */}
             </div>
             <div className="bottom-text">
               <div className="content">
                 <strong>{course.length}+</strong> more skillful courses you can explore{" "}
-                {/* <a
-                  href="page-courses.html"
-                  className="theme-btn btn-style-one small"
-                >
-  
-                </a> */}
                 <Link to='/courses' className="theme-btn btn-style-one small">
                   Explore All Courses
                 </Link>

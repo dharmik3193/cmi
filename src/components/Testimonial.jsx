@@ -11,7 +11,6 @@ const Testimonial = () => {
             setscreen(1)
         } else {
             setscreen(2)
-            // screen=4
         }
     }
 
@@ -19,13 +18,10 @@ const Testimonial = () => {
 
         axios.get(`https://attractive-gold-wetsuit.cyclic.app/get_review`)
             .then(function (res) {
-                // handle success
                 console.log(res.data.data);
                 setreview(res.data.data.reverse())
-                // setreview(review.reverse)
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
     }, [])
@@ -62,13 +58,11 @@ const Testimonial = () => {
                         {/* Testimonial Column */}
                         <div className="testimonial-column col-xl-8 col-lg-7 col-md-12">
                             <div className="carousel-outer">
-                                {/* <div className="testimonial-carousel owl-carousel owl-theme"> */}
                                 <OwlCarousel items={screen}
                                     className="owl-theme carousel-outer testimonial-carousel"
                                     loop
                                     nav={false}
                                     dots={false}
-                                // margin={8}
                                 >
 
                                     {

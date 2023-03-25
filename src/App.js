@@ -2,8 +2,6 @@ import './App.css';
 import $ from 'jquery';
 import { useEffect } from 'react'
 import WOW from 'wowjs';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './Pages/Home';
 import Courses from './Pages/Courses';
 import About from './Pages/About';
@@ -11,7 +9,6 @@ import Contact from './Pages/Contact';
 import Blog from './Pages/Blog';
 import { Route, Routes } from 'react-router-dom';
 import SingleCourse from './Pages/SingleCourse';
-import Preloader from './components/Preloader';
 import SingleBlog from './Pages/SingleBlog';
 
 function App() {
@@ -85,16 +82,6 @@ function App() {
     }
     mobilenav();
 
-    //Header Search
-    if ($('.search-btn').length) {
-      $('.search-btn').on('click', function () {
-        $('.main-header').addClass('moblie-search-active');
-      });
-      $('.close-search, .search-back-drop').on('click', function () {
-        $('.main-header').removeClass('moblie-search-active');
-      });
-    }
-
 
     //Banner Carousel
     if ($('.banner-carousel').length) {
@@ -122,31 +109,6 @@ function App() {
         }
       });
     }
-
-
-    //Accordion Box
-    if ($('.accordion-box').length) {
-      $(".accordion-box").on('click', '.acc-btn', function () {
-
-        var outerBox = $(this).parents('.accordion-box');
-        var target = $(this).parents('.accordion');
-
-        if ($(this).hasClass('active') !== true) {
-          $(outerBox).find('.accordion .acc-btn').removeClass('active ');
-        }
-
-        if ($(this).next('.acc-content').is(':visible')) {
-          return false;
-        } else {
-          $(this).addClass('active');
-          $(outerBox).children('.accordion').removeClass('active-block');
-          $(outerBox).find('.accordion').children('.acc-content').slideUp(300);
-          target.addClass('active-block');
-          $(this).next('.acc-content').slideDown(300);
-        }
-      });
-    }
-
 
 
     //Fact Counter + Text Count
@@ -259,62 +221,16 @@ function App() {
     }
 
     // Elements Animation
-    // if ($('.wow').length) {
     var wow = new WOW.WOW(
       {
-        boxClass: 'wow',      // animated element css class (default is wow)
-        animateClass: 'animated', // animation css class (default is animated)
-        offset: 0,          // distance to the element when triggering the animation (default is 0)
-        mobile: false,       // trigger animations on mobile devices (default is true)
-        live: true       // act on asynchronously loaded content (default is true)
+        boxClass: 'wow',   
+        animateClass: 'animated', 
+        offset: 0,         
+        mobile: false,      
+        live: true      
       }
     );
     wow.init();
-    // }
-
-    //Quantity box
-    $(".quantity-box .add").on("click", function () {
-      if ($(this).prev().val() < 999) {
-        $(this)
-          .prev()
-          .val(+$(this).prev().val() + 1);
-      }
-    });
-    $(".quantity-box .sub").on("click", function () {
-      if ($(this).next().val() > 1) {
-        if ($(this).next().val() > 1)
-          $(this)
-            .next()
-            .val(+$(this).next().val() - 1);
-      }
-    });
-
-    //Price Range Slider
-    if ($('.price-range-slider').length) {
-      $(".price-range-slider").slider({
-        range: true,
-        min: 10,
-        max: 99,
-        values: [10, 60],
-        slide: function (event, ui) {
-          $("input.property-amount").val(ui.values[0] + " - " + ui.values[1]);
-        }
-      });
-
-      $("input.property-amount").val($(".price-range-slider").slider("values", 0) + " - $" + $(".price-range-slider").slider("values", 1));
-    }
-
-
-    // Select2 Dropdown
-    // $('.custom-select').select2({
-    //   minimumResultsForSearch: 7,
-    // });
-
-    //Gallery Filters
-    if ($('.filter-list').length) {
-      $('.filter-list').mixItUp({});
-    }
-
 
     /* ==========================================================================
        When document is Scrollig, do
@@ -336,12 +252,6 @@ function App() {
 
   return (
     <div className="page-wrapper">
-      {/* <Header /> */}
-      {/* <Home/> */}
-      {/* <Courses/> */}
-      {/* <About/> */}
-      {/* <Contact/> */}
-      {/* <Blog/> */}
 
       <Routes>
 
@@ -355,8 +265,6 @@ function App() {
         <Route path='/blog/:id' element={<SingleBlog />} />
 
       </Routes>
-      {/* <Preloader /> */}
-      {/* <GptFooter/> */}
     </div>
   );
 }

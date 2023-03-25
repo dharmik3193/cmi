@@ -13,15 +13,12 @@ const Blog = () => {
     const [isLoading, setisLoading] = useState(true);
 
     useEffect(() => {
-        // window.addEventListener('scroll', loadScript);
         axios.get('https://attractive-gold-wetsuit.cyclic.app/get_blog')
             .then(function (res) {
-                // handle success
                 console.log(res.data.data);
                 setBlog(res.data.data)
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
         setInterval(() => {

@@ -20,7 +20,6 @@ const SingleCourse = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [addcourse, setAddcourse] = useState('');
-    // const [isLoading, setisLoading] = useState(false);
 
 
     const handleClose = () => setShow(false);
@@ -32,25 +31,21 @@ const SingleCourse = () => {
         console.log(params.id);
         axios.get(`https://attractive-gold-wetsuit.cyclic.app/course/${params.id}`)
             .then(function (res) {
-                // handle success
                 console.log(res.data.data);
                 setCourse(res.data.data)
                 setIsdata(true)
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
 
         axios.get(`https://attractive-gold-wetsuit.cyclic.app/getall_courses`)
             .then(function (res) {
-                // handle success
                 console.log(res.data.data);
                 setCourses(res.data.data)
                 setIsalldata(true)
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
     }, [])
@@ -59,11 +54,6 @@ const SingleCourse = () => {
         var mobileMenuContent = $('.main-header .main-menu .navigation').html();
         $('.sticky-header .navigation').append(mobileMenuContent);
         $( ".clearfix li:nth-child(2)" ).addClass('current');
-
-        // setInterval(() => {
-        //     setisLoading(true)
-        // }, 1000);
-
     })
 
     const add_inquiry = (e) => {
@@ -215,7 +205,6 @@ const SingleCourse = () => {
                                             <div className="category-block-current-two col-lg-4 col-md-6 col-sm-6">
                                                 <div className="inner-box">
                                                     <div className="icon-box">
-                                                        {/* <i class="fa-regular fa-clock"></i> */}
                                                         <AiOutlineClockCircle />
                                                     </div>
                                                     <h4 className="title">Lacture Duration</h4>

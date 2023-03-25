@@ -35,39 +35,6 @@ const Client = () => {
                 <div className="container">
                     {/* Sponsors Outer */}
                     <div className="sponsors-outer">
-                        {/*clients carousel*/}
-                        {/* <ul className="clients-carousel owl-theme">
-                            <li className="slide-item">
-                                {" "}
-                                <a href="#">
-                                    <img src="images/resource/client.png" alt="" />
-                                </a>{" "}
-                            </li>
-                            <li className="slide-item">
-                                {" "}
-                                <a href="#">
-                                    <img src="images/resource/client.png" alt="" />
-                                </a>{" "}
-                            </li>
-                            <li className="slide-item">
-                                {" "}
-                                <a href="#">
-                                    <img src="images/resource/client.png" alt="" />
-                                </a>{" "}
-                            </li>
-                            <li className="slide-item">
-                                {" "}
-                                <a href="#">
-                                    <img src="images/resource/client.png" alt="" />
-                                </a>{" "}
-                            </li>
-                            <li className="slide-item">
-                                {" "}
-                                <a href="#">
-                                    <img src="images/resource/client.png" alt="" />
-                                </a>{" "}
-                            </li>
-                        </ul> */}
                         <OwlCarousel items={screen}
                             className="owl-theme clients-carousel"
                             loop

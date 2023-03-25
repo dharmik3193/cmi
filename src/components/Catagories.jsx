@@ -38,9 +38,6 @@ const Catagories = () => {
                         <div className="category-block-current col-xl-2 col-lg-3 col-md-4 col-sm-6">
                             <div className="inner-box">
                                 <div className="icon-box">
-                                    {/* <i className="icon flaticon-stationary" /> */}
-                                    {/* <RiCss3Line className="icon iconstr"/> */}
-                                    {/* <HiOutlineCode className="icon iconstr iconwidth"/> */}
                                     <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" class="icon iconstr" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
                                 </div>
                                 <h6 className="title">
@@ -55,7 +52,6 @@ const Catagories = () => {
                         <div className="category-block-current col-xl-2 col-lg-3 col-md-4 col-sm-6">
                             <div className="inner-box">
                                 <div className="icon-box">
-                                    {/* <i className="icon flaticon-online-learning" /> */}
                                     <SiReacttable className="icon iconpadding"/>
                                 </div>
                                 <h6 className="title">
@@ -70,7 +66,6 @@ const Catagories = () => {
                         <div className="category-block-current col-xl-2 col-lg-3 col-md-4 col-sm-6">
                             <div className="inner-box">
                                 <div className="icon-box">
-                                    {/* <i className="icon flaticon-study" /> */}
                                     <SiNodedotjs className="icon iconpadding"/>
                                 </div>
                                 <h6 className="title">
@@ -85,9 +80,7 @@ const Catagories = () => {
                         <div className="category-block-current col-xl-2 col-lg-3 col-md-4 col-sm-6">
                             <div className="inner-box">
                                 <div className="icon-box">
-                                    {/* <i className="icon flaticon-pie-chart" /> */}
                                     <TbBrandAndroid className="icon iconstr"/>
-                                    {/* <UilAndroidAlt className="icon"/> */}
                                 </div>
                                 <h6 className="title">
                                     <Link to='/courses'>

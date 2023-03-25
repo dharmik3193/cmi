@@ -41,13 +41,10 @@ const Home = () => {
             <Features />
             <Catagories />
             <Signup />
-            {/* <Team /> */}
             <C2a />
             <Testimonial />
             <Abouthome2 />
-            {/* <Countdown /> */}
             <News />
-            {/* <Client /> */}
             <Footer />
         </>
     )

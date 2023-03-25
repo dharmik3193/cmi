@@ -36,7 +36,6 @@ const Header = (props) => {
             <header className="main-header header-style-one">
                 <div className="container">
                     {/* Main box */}
-                    {/* <div className="main-box"> */}
                     <div>
                         <div className="row align-items-center justify-content-between">
                             <div className="logo-box col-xl-7 col-lg-6 col-10">
@@ -71,21 +70,6 @@ const Header = (props) => {
                                 </nav>
                                 {/* Main Menu End*/}
                                 <div className="outer-box">
-                                    {/* <a href="tel:+92(8800)9806" className="info-btn">
-                                            <i className="icon fa fa-phone" />
-                                            <small>Call Anytime</small>
-                                            <br /> +92 (8800) - 8960
-                                        </a> */}
-                                    {/* <div class="ui-btn-outer">
-						<button class="ui-btn ui-btn search-btn">
-							<span class="icon lnr lnr-icon-search"></span>
-						</button>
-						<a href="#" class="ui-btn"><i class="lnr-icon-shopping-cart"></i></a>
-					</div> */}
-                                    {/* <a href="#" className="theme-btn btn-style-one">
-                                            <span className="btn-title">Have Any Questions ?</span>
-                                        </a> */}
-                                    {/* Mobile Nav toggler */}
                                     <div className="mobile-nav-toggler">
                                         <span className="icon lnr-icon-bars" />
                                     </div>
@@ -97,12 +81,10 @@ const Header = (props) => {
                     {/* Mobile Menu  */}
                     <div className="mobile-menu">
                         <div className="menu-backdrop" />
-                        {/*Here Menu Will Come Automatically Via Javascript / Same Menu as in Header*/}
                         <nav className="menu-box">
                             <div className="upper-box">
                                 <div className="nav-logo">
                                     <a href="index.html">
-                                        {/* <img src="images/logo-2.png" alt="" title="" /> */}
                                         <img src={require('../Assets/codesign.webp')} alt="Codesign Logo" title="Codesign" />
                                     </a>
                                 </div>
@@ -111,7 +93,7 @@ const Header = (props) => {
                                 </div>
                             </div>
                             <ul className="navigation clearfix">
-                                {/*Keep This Empty / Menu will come through Javascript*/}
+                                {/*JS Menu*/}
                             </ul>
                             <ul className="contact-list-one">
                                 <li>
@@ -195,7 +177,6 @@ const Header = (props) => {
                                 {/*Logo*/}
                                 <div className="logo">
                                     <a href="index.html" title="">
-                                        {/* <img src="images/logo.png" alt="" title="" /> */}
                                         <img src={require('../Assets/codesign.webp')} alt="Codesign Logo" title="Codesign" />
                                     </a>
                                 </div>
@@ -205,7 +186,7 @@ const Header = (props) => {
                                     <nav className="main-menu">
                                         <div className="navbar-collapse show collapse clearfix">
                                             <ul className="navigation clearfix">
-                                                {/*Keep This Empty / Menu will come through Javascript*/}
+                                                {/*JS Menu*/}
                                             </ul>
                                         </div>
                                     </nav>

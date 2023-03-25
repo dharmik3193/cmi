@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { useEffect } from "react"
 
 const Countdown = () => {
 
@@ -35,10 +34,6 @@ const Countdown = () => {
             }
 
             console.log(todaydate)
-            // if(day===2)
-            // {
-            //     year = now.getFullYear()+1;
-            // }
 
 
             if (todaydate > 31) {
@@ -46,7 +41,6 @@ const Countdown = () => {
             } else {
                 var comingDate = new Date(`${month + 1} ${todaydate}, ${year} 00:00:00`)
             }
-            // let now = new Date()
             let selisih = comingDate.getTime() - now.getTime()
 
             setDays(Math.floor(selisih / (1000 * 60 * 60 * 24)))

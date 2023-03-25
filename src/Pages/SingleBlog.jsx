@@ -19,25 +19,21 @@ const SingleBlog = () => {
         console.log(params.id);
         axios.get(`https://attractive-gold-wetsuit.cyclic.app/blog/${params.id}`)
             .then(function (res) {
-                // handle success
                 console.log(res.data);
                 setBlog(res.data.data)
                 setIsData(true)
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
 
         axios.get(`https://attractive-gold-wetsuit.cyclic.app/get_blog`)
             .then(function (res) {
-                // handle success
                 console.log(res.data.data);
                 setBlogs(res.data.data)
                 setIsallData(true)
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
     }, [])

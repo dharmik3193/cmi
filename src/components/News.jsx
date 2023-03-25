@@ -14,7 +14,6 @@ const News = () => {
                 console.log(blog);
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
     }, [])

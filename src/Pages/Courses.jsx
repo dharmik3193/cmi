@@ -16,13 +16,11 @@ const Courses = () => {
     useEffect(() => {
         axios.get('https://attractive-gold-wetsuit.cyclic.app/getall_courses')
             .then(function (res) {
-                // handle success
                 console.log(res.data.data);
                 setCourse(res.data.data)
                 setIsdata(true)
             })
             .catch(function (error) {
-                // handle error
                 console.log(error);
             })
     }, [])
