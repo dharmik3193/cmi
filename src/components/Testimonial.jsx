@@ -17,7 +17,7 @@ const Testimonial = () => {
 
     useEffect(() => {
 
-        axios.get(`https://cmiapi-kt1r.onrender.com/get_review`)
+        axios.get(`https://attractive-gold-wetsuit.cyclic.app/get_review`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);

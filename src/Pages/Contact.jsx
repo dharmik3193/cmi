@@ -28,7 +28,7 @@ const Contact = () => {
 
     const add_inquiry = (e) => {
         e.preventDefault()
-        axios.post('https://cmiapi-kt1r.onrender.com/contact', {
+        axios.post('https://attractive-gold-wetsuit.cyclic.app/contact', {
             name: name,
             email: email,
             subject: subject,

@@ -30,7 +30,7 @@ const SingleCourse = () => {
 
     useEffect(() => {
         console.log(params.id);
-        axios.get(`https://cmiapi-kt1r.onrender.com/course/${params.id}`)
+        axios.get(`https://attractive-gold-wetsuit.cyclic.app/course/${params.id}`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);
@@ -42,7 +42,7 @@ const SingleCourse = () => {
                 console.log(error);
             })
 
-        axios.get(`https://cmiapi-kt1r.onrender.com/getall_courses`)
+        axios.get(`https://attractive-gold-wetsuit.cyclic.app/getall_courses`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);
@@ -68,7 +68,7 @@ const SingleCourse = () => {
 
     const add_inquiry = (e) => {
         e.preventDefault()
-        axios.post('https://cmiapi-kt1r.onrender.com/add_inquiry', {
+        axios.post('https://attractive-gold-wetsuit.cyclic.app/add_inquiry', {
             name: name,
             email: email,
             course: addcourse

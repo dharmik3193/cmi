@@ -6,7 +6,7 @@ const News = () => {
     const [blog, setBlog] = useState([]);
 
     useEffect(() => {
-        axios.get('https://cmiapi-kt1r.onrender.com/get_blog')
+        axios.get('https://attractive-gold-wetsuit.cyclic.app/get_blog')
             .then(function (res) {
                 for (var i = 0; i < res.data.data.length; i++) {
                     setBlog(res.data.data.slice(0, 3))

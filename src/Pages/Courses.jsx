@@ -14,7 +14,7 @@ const Courses = () => {
     const [isloading, setIsloading] = useState(false);
 
     useEffect(() => {
-        axios.get('https://cmiapi-kt1r.onrender.com/getall_courses')
+        axios.get('https://attractive-gold-wetsuit.cyclic.app/getall_courses')
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);

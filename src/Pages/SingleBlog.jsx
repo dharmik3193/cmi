@@ -17,7 +17,7 @@ const SingleBlog = () => {
 
     useEffect(() => {
         console.log(params.id);
-        axios.get(`https://cmiapi-kt1r.onrender.com/blog/${params.id}`)
+        axios.get(`https://attractive-gold-wetsuit.cyclic.app/blog/${params.id}`)
             .then(function (res) {
                 // handle success
                 console.log(res.data);
@@ -29,7 +29,7 @@ const SingleBlog = () => {
                 console.log(error);
             })
 
-        axios.get(`https://cmiapi-kt1r.onrender.com/get_blog`)
+        axios.get(`https://attractive-gold-wetsuit.cyclic.app/get_blog`)
             .then(function (res) {
                 // handle success
                 console.log(res.data.data);

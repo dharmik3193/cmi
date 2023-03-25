@@ -351,6 +351,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path='/course/:id' element={<SingleCourse />} />
+        <Route path='/about/course/:id' element={<SingleCourse />} />
         <Route path='/blog/:id' element={<SingleBlog />} />
 
       </Routes>
