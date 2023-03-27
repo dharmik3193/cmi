@@ -53,7 +53,7 @@ const SingleCourse = () => {
     useEffect(() => {
         var mobileMenuContent = $('.main-header .main-menu .navigation').html();
         $('.sticky-header .navigation').append(mobileMenuContent);
-        $( ".clearfix li:nth-child(2)" ).addClass('current');
+        $(".clearfix li:nth-child(2)").addClass('current');
     })
 
     const add_inquiry = (e) => {
@@ -180,16 +180,16 @@ const SingleCourse = () => {
                                 <div className="courses-details__content">
                                     <img src={course.image} alt="" />
                                     <h2 className="mt-4">{`${course.title} Training - The Advance Guide To ${course.title} Course In Surat`}</h2>
-                                    <p>{course.description}</p>
+                                    <div>
+                                        {
+                                            course.description.map((item)=>{
+                                                return(
+                                                    <p>{item}</p>
+                                                )
+                                            })
+                                        }
+                                    </div>
                                     <div className="content mt-40">
-                                        <div className="text">
-                                            <h3>What You Will Learn?</h3>
-                                            <p>
-                                                Lorem ipsum is simply free text used by copytyping refreshing.
-                                                Neque porro est qui dolorem ipsum quia quaed inventore veritatis
-                                                et quasi architecto beatae vitae dicta sunt explicabo.
-                                            </p>
-                                        </div>
                                         <div className="row mt-30">
                                             {/* Category Block Two */}
                                             <div className="category-block-current-two col-lg-4 col-md-6 col-sm-6">
@@ -222,6 +222,43 @@ const SingleCourse = () => {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className="text">
+                                            <h3>What You Will Learn?</h3>
+                                            <p>
+                                                Lorem ipsum is simply free text used by copytyping refreshing. Neque porro
+                                                est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto
+                                                beatae vitae dicta sunt explicabo.
+                                            </p>
+                                            <ul
+                                                className="accordion-box wow fadeInRight animated"
+                                                style={{ visibility: "visible", animationName: "fadeInRight" }}
+                                            >
+
+                                                {
+                                                    course.topics.map((item) => {
+                                                        return (
+                                                            <li className="accordion block">
+                                                                <Accordion defaultActiveKey="0" className="acc-btn">
+                                                                    <Accordion.Item eventKey="0" >
+                                                                        <Accordion.Header>{item.main}</Accordion.Header>
+                                                                        <Accordion.Body>
+                                                                           <ul className="list_style mx-5">
+                                                                           {
+                                                                                item.sub.map((data) => {
+                                                                                    return <li>{data}</li>
+                                                                                })
+                                                                            }
+                                                                           </ul>
+                                                                        </Accordion.Body>
+                                                                    </Accordion.Item>
+                                                                </Accordion>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </ul>
+                                        </div>
+
                                     </div>
                                     <div className=" mt-25">
                                         <h3>Frequently Asked Question</h3>
