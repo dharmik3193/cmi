@@ -138,9 +138,9 @@ const Testimonial = () => {
                                     items={screen}
                                     className="owl-theme clients-carousel"
                                     loop
-                                    nav={false}
-                                    dots={false}
-                                    margin={8}
+                                    // nav={false}
+                                    // dots={false}
+                                    // margin={8}
                                 >
                                     {/* Course Block */}
                                     <>
