@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import OwlCarousel from "react-owl-carousel";
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Testimonial = () => {
     const [screen, setscreen] = useState((window.innerWidth < 768) ? 1 : 2)
