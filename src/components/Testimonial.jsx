@@ -65,14 +65,12 @@ const Testimonial = () => {
                                     dots={false}
                                 >
 
-                                    {
-                                        review.map((item,index) => {
-                                            return (
-                                                <div className="testimonial-block" key={index}>
+                                   
+                                                <div className="testimonial-block">
                                                     <div className="inner-box">
                                                         <div className="content-box">
                                                             <figure className="thumb">
-                                                                <img src={item.image} alt="" />
+                                                                <img src={require('../Assets/yash.png')} alt="" />
                                                             </figure>
                                                             <div className="rating d-flex">
                                                                 <div>
@@ -83,15 +81,15 @@ const Testimonial = () => {
                                                                     <i className="fa fa-star" />
                                                                 </div>
                                                                 <div>
-                                                                    ({item.rating})
+                                                                    (5)
                                                                 </div>
                                                             </div>
                                                             <div className="text">
-                                                                {item.subject}
+                                                            Courses are very well designed and teaching techniques also great sequencing. Any non-technical person also learn easily and take a right step in IT field. Thank you Codesign Multimedia Institute for develop my confidence.
                                                             </div>
                                                             <div className="info-box">
                                                                 <span className="icon-quote" />
-                                                                <h4 className="name">{item.name}</h4>
+                                                                <h4 className="name">294_Yash _Ravani</h4>
                                                                 <span className="designation d-flex">
                                                                     <div className="m-1">Posted on</div>
                                                                     <div className="google_logo mx-2">
@@ -131,9 +129,6 @@ const Testimonial = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                            )
-                                        })
-                                    }
                                 </OwlCarousel>
                             </div>
                         </div>
