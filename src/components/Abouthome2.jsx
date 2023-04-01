@@ -26,9 +26,9 @@ const Abouthome2 = () => {
                                             <span className="info-text">Best career oriented courses</span>
                                             <div className="info-box">
                                                 <div className="thumb">
-                                                    <img src="images/resource/avatar-1.jpg" alt="" />
+                                                    <img src={require('../Assets/sahil-a.jpg')} alt="" />
                                                 </div>
-                                                <h5 className="name">John Doe</h5>
+                                                <h5 className="name">Sahil Ramoliya</h5>
                                                 <span className="designation">Student</span>
                                             </div>
                                         </div>
@@ -38,10 +38,10 @@ const Abouthome2 = () => {
                                             <span className="info-text">Best faculty support</span>
                                             <div className="info-box">
                                                 <div className="thumb">
-                                                    <img src="images/resource/avatar-2.jpg" alt="" />
+                                                    <img src={require('../Assets/jenil-a.jpg')} alt="" />
                                                 </div>
-                                                <h5 className="name">Albart Brown</h5>
-                                                <span className="designation">TEACHER</span>
+                                                <h5 className="name">Jenil Mangukiya</h5>
+                                                <span className="designation">Student</span>
                                             </div>
                                         </div>
                                     </div>

@@ -46,7 +46,7 @@ const Courses = () => {
                             <h1 className="title">Courses</h1>
                             <ul className="page-breadcrumb">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>
                                     <a href="#">Pages</a>

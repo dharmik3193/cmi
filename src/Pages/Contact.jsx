@@ -70,7 +70,7 @@ const Contact = () => {
                             <h1 className="title">Contact Us</h1>
                             <ul className="page-breadcrumb">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>Contact</li>
                             </ul>

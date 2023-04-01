@@ -34,7 +34,7 @@ const About = () => {
                                 <h1 className="title">About Us</h1>
                                 <ul className="page-breadcrumb">
                                     <li>
-                                        <a href="index.html">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                     <li>
                                         <a href="#">Pages</a>

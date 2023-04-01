@@ -160,7 +160,7 @@ const SingleCourse = () => {
                             <h1 className="title">Course Details</h1>
                             <ul className="page-breadcrumb">
                                 <li>
-                                    <a href="index.html">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 <li>
                                     <a href="#">Pages</a>
@@ -182,8 +182,8 @@ const SingleCourse = () => {
                                     <h2 className="mt-4">{`${course.title} Training - The Advance Guide To ${course.title} Course In Surat`}</h2>
                                     <div>
                                         {
-                                            course.description.map((item)=>{
-                                                return(
+                                            course.description.map((item) => {
+                                                return (
                                                     <p>{item}</p>
                                                 )
                                             })
@@ -225,9 +225,7 @@ const SingleCourse = () => {
                                         <div className="text">
                                             <h3>What You Will Learn?</h3>
                                             <p>
-                                                Lorem ipsum is simply free text used by copytyping refreshing. Neque porro
-                                                est qui dolorem ipsum quia quaed inventore veritatis et quasi architecto
-                                                beatae vitae dicta sunt explicabo.
+                                                {course.what_learn}
                                             </p>
                                             <ul
                                                 className="accordion-box wow fadeInRight animated"
@@ -239,16 +237,16 @@ const SingleCourse = () => {
                                                         return (
                                                             <li className="accordion block">
                                                                 <Accordion defaultActiveKey="0" className="acc-btn">
-                                                                    <Accordion.Item eventKey="0" >
+                                                                    <Accordion.Item eventKey="1" >
                                                                         <Accordion.Header>{item.main}</Accordion.Header>
                                                                         <Accordion.Body>
-                                                                           <ul className="list_style mx-5">
-                                                                           {
-                                                                                item.sub.map((data) => {
-                                                                                    return <li>{data}</li>
-                                                                                })
-                                                                            }
-                                                                           </ul>
+                                                                            <ul className="list_style mx-5">
+                                                                                {
+                                                                                    item.sub.map((data) => {
+                                                                                        return <li>{data}</li>
+                                                                                    })
+                                                                                }
+                                                                            </ul>
                                                                         </Accordion.Body>
                                                                     </Accordion.Item>
                                                                 </Accordion>
@@ -263,65 +261,30 @@ const SingleCourse = () => {
                                     <div className=" mt-25">
                                         <h3>Frequently Asked Question</h3>
                                         <p>
-                                            Lorem ipsum is simply free text used by copytyping refreshing.
-                                            Neque porro est qui dolorem ipsum quia quaed inventore veritatis
-                                            et quasi architecto beatae vitae dicta sunt explicabo.
+                                            Here are some question which might you have.
                                         </p>
                                         <ul
                                             className="accordion-box wow fadeInRight animated"
                                             style={{ visibility: "visible", animationName: "fadeInRight" }}
                                         >
                                             {/*Block*/}
-                                            <li className="accordion block">
-                                                <Accordion defaultActiveKey="0" className="acc-btn">
-                                                    <Accordion.Item eventKey="0" >
-                                                        <Accordion.Header>Accordion Item #1</Accordion.Header>
-                                                        <Accordion.Body>
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                            culpa qui officia deserunt mollit anim id est laborum.
-                                                        </Accordion.Body>
-                                                    </Accordion.Item>
-                                                </Accordion>
-                                            </li>
-                                            {/*Block*/}
-                                            <li className="accordion block">
-                                                <Accordion defaultActiveKey="1" className="acc-btn">
-                                                    <Accordion.Item eventKey="0" >
-                                                        <Accordion.Header>Accordion Item #1</Accordion.Header>
-                                                        <Accordion.Body>
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                            culpa qui officia deserunt mollit anim id est laborum.
-                                                        </Accordion.Body>
-                                                    </Accordion.Item>
-                                                </Accordion>
-                                            </li>
-                                            {/*Block*/}
-                                            <li className="accordion block">
-                                                <Accordion defaultActiveKey="1" className="acc-btn">
-                                                    <Accordion.Item eventKey="0" >
-                                                        <Accordion.Header>Accordion Item #1</Accordion.Header>
-                                                        <Accordion.Body>
-                                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                                            aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                            culpa qui officia deserunt mollit anim id est laborum.
-                                                        </Accordion.Body>
-                                                    </Accordion.Item>
-                                                </Accordion>
-                                            </li>
+                                            {
+                                                course.faq.map((data) => {
+                                                    return (
+                                                        <li className="accordion block">
+                                                            <Accordion defaultActiveKey="0" className="acc-btn">
+                                                                <Accordion.Item eventKey="1" >
+                                                                    <Accordion.Header>{data.que}</Accordion.Header>
+                                                                    <Accordion.Body>
+                                                                       {data.ans}
+                                                                    </Accordion.Body>
+                                                                </Accordion.Item>
+                                                            </Accordion>
+                                                        </li>
+                                                    )
+                                                })
+                                            }
+
                                         </ul>
                                     </div>
                                 </div>

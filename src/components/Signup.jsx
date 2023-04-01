@@ -32,6 +32,7 @@ const Signup = () => {
             setName('')
             setEmail('');
             setAddcourse('')
+            alert("Request submitted successfully. Thanks!!")
           })
           .catch(function (error) {
             console.log(error);
