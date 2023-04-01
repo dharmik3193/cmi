@@ -144,11 +144,14 @@ const Testimonial = () => {
                                 >
                                     {/* Course Block */}
                                     <>
-                                        <div className="testimonial-block">
+                                        {
+                                            review.map((item)=>{
+                                                return(
+                                                    <div className="testimonial-block">
                                             <div className="inner-box">
                                                 <div className="content-box">
                                                     <figure className="thumb">
-                                                        <img src={require('../Assets/yash.png')} alt="" />
+                                                        <img src={item.image} alt="" />
                                                     </figure>
                                                     <div className="rating d-flex">
                                                         <div>
@@ -159,15 +162,15 @@ const Testimonial = () => {
                                                             <i className="fa fa-star" />
                                                         </div>
                                                         <div>
-                                                            (5)
+                                                            ({item.rating})
                                                         </div>
                                                     </div>
                                                     <div className="text">
-                                                        Courses are very well designed and teaching techniques also great sequencing. Any non-technical person also learn easily and take a right step in IT field. Thank you Codesign Multimedia Institute for develop my confidence.
+                                                        {item.subject}
                                                     </div>
                                                     <div className="info-box">
                                                         <span className="icon-quote" />
-                                                        <h4 className="name">294_Yash _Ravani</h4>
+                                                        <h4 className="name">{item.name}</h4>
                                                         <span className="designation d-flex">
                                                             <div className="m-1">Posted on</div>
                                                             <div className="google_logo mx-2">
@@ -207,6 +210,9 @@ const Testimonial = () => {
                                                 </div>
                                             </div>
                                         </div>
+                                                )
+                                            })
+                                        }
                                     </>
                                 </OwlCarousel>
                             </div>
