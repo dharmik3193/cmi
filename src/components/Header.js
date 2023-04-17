@@ -64,8 +64,6 @@ const Header = (props) => {
                                         <li className={isActive5 ? "current" : ""}>
                                             <Link to='/contact'>Contact</Link>
                                         </li>
-                                        
-
                                     </ul>
                                 </nav>
                                 {/* Main Menu End*/}
@@ -94,6 +92,21 @@ const Header = (props) => {
                             </div>
                             <ul className="navigation clearfix">
                                 {/*JS Menu*/}
+                                <li className={isActive1 ? "current" : ""} onClick={() => { window.location.reload(false) }}>
+                                            <Link to='/'>Home</Link>
+                                        </li>
+                                        <li className={isActive2 ? "current" : ""}>
+                                            <Link to='/courses'>Courses</Link>
+                                        </li>
+                                        <li className={isActive3 ? "current" : ""}>
+                                            <Link to='/about'>About</Link>
+                                        </li>
+                                        <li className={isActive4 ? "current" : ""}>
+                                            <Link to='/blog'>Blog</Link>
+                                        </li>
+                                        <li className={isActive5 ? "current" : ""}>
+                                            <Link to='/contact'>Contact</Link>
+                                        </li>
                             </ul>
                             <ul className="contact-list-one">
                                 <li>

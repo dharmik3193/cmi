@@ -727,7 +727,7 @@ Scroll To Top style
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 20px;
-  padding-right: 20px;
+  /* padding-right: 20px; */
   letter-spacing: -0.01em;
 }
 .list-style-one li:hover .icon {

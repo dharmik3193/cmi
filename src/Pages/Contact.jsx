@@ -24,7 +24,7 @@ const Contact = () => {
             setisLoading(false)
         }, 1000);
 
-    })
+    },[isLoading]);
 
     const add_inquiry = (e) => {
         e.preventDefault()
