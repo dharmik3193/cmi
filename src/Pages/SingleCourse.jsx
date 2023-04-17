@@ -54,7 +54,7 @@ const SingleCourse = () => {
         var mobileMenuContent = $('.main-header .main-menu .navigation').html();
         $('.sticky-header .navigation').append(mobileMenuContent);
         $(".clearfix li:nth-child(2)").addClass('current');
-    })
+    },[])
 
     const add_inquiry = (e) => {
         e.preventDefault()
