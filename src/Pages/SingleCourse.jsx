@@ -20,6 +20,7 @@ const SingleCourse = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [addcourse, setAddcourse] = useState('');
+    const [showalert, setShowalert] = useState('');
 
 
     const handleClose = () => setShow(false);

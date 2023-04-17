@@ -5,13 +5,11 @@ import Abouthome from "../components/Abouthome";
 import Abouthome2 from "../components/Abouthome2";
 import C2a from "../components/C2a";
 import Catagories from "../components/Catagories";
-import Countdown from "../components/Countdown";
 import Coursehome from "../components/Coursehome";
 import Features from "../components/Features";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import News from "../components/News";
-import Preloader from "../components/Preloader";
 import Signup from "../components/Signup";
 import Slider from "../components/Slider";
 import Testimonial from "../components/Testimonial";
@@ -19,11 +17,15 @@ import $ from 'jquery';
 
 const Home = () => {
 
+    const [data, setData] = useState(1)
     useEffect(() => {
-        $( ".clearfix li:nth-child(1)" ).addClass('current');
-    }, [])
-    
-    
+        $(".clearfix li:nth-child(1)").addClass('current');
+        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
+        $('.sticky-header .navigation').append(mobileMenuContent);
+        $(".clearfix li:nth-child(2)").addClass('current');
+    }, [data])
+
+
     return (
         <>
             <Helmet>
@@ -33,6 +35,27 @@ const Home = () => {
                 <meta name="twitter:title" content="React JS Course in Surat | React JS Training in Surat | React JS Jobs" />
                 <meta name="twitter:description" content="Codesign Multimedia is the #No 1 IT Training institute in Surat. Provide 100% Job Placement Guarantee. Join now Computer course in Surat" />
                 <title>React JS Course in Surat | React JS Training in Surat | React JS Jobs</title>
+                {/* <!--Revolution Slider--> */}
+                <script src="/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+                <script src="/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+                <script src="/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+                <script src="/js/main-slider-script.js"></script>
+                {/* <!--Revolution Slider--> */}
+                <script src="/js/jquery.fancybox.js"></script>
+                <script src="/js/jquery-ui.js"></script>
+                <script src="/js/appear.js"></script>
+                <script src="/js/jquery.countdown.js"></script>
+                <script src="/js/select2.min.js"></script>
+                <script src="/js/owl.js"></script>
+                <script src="/js/script.js" async></script>
             </Helmet>
             <Header id="1" />
             <Slider />
