@@ -20,9 +20,6 @@ const Home = () => {
     const [data, setData] = useState(1)
     useEffect(() => {
         $(".clearfix li:nth-child(1)").addClass('current');
-        var mobileMenuContent = $('.main-header .main-menu .navigation').html();
-        $('.sticky-header .navigation').append(mobileMenuContent);
-        $(".clearfix li:nth-child(2)").addClass('current');
     }, [])
 
 
