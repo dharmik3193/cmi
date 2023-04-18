@@ -49,7 +49,7 @@ const Header = (props) => {
                             <div className="nav-outer col-xl-5 col-lg-6 col-2">
                                 <nav className="nav main-menu">
                                     <ul className="navigation">
-                                        <li className={isActive1 ? "current" : ""} onClick={() => { window.location.reload(false) }}>
+                                        <li className={isActive1 ? "current" : ""}>
                                             <Link to='/'>Home</Link>
                                         </li>
                                         <li className={isActive2 ? "current" : ""}>
@@ -92,7 +92,7 @@ const Header = (props) => {
                             </div>
                             <ul className="navigation clearfix">
                                 {/*JS Menu*/}
-                                <li className={isActive1 ? "current" : ""} onClick={() => { window.location.reload(false) }}>
+                                {/* <li className={isActive1 ? "current" : ""} onClick={() => { window.location.reload(false) }}>
                                             <Link to='/'>Home</Link>
                                         </li>
                                         <li className={isActive2 ? "current" : ""}>
@@ -106,7 +106,7 @@ const Header = (props) => {
                                         </li>
                                         <li className={isActive5 ? "current" : ""}>
                                             <Link to='/contact'>Contact</Link>
-                                        </li>
+                                        </li> */}
                             </ul>
                             <ul className="contact-list-one">
                                 <li>
