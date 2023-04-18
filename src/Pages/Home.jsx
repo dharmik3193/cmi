@@ -22,6 +22,20 @@ const Home = () => {
         $(".clearfix li:nth-child(1)").addClass('current');
     }, [])
 
+    useEffect(() => {
+        const head = document.querySelector("head");
+        const script = document.createElement("script");
+
+        script.setAttribute("src", "/js/script.js");
+        head.appendChild(script);
+
+        return () => {
+            head.removeChild(script);
+        };
+
+    }, [])
+
+
 
     return (
         <>
@@ -32,27 +46,6 @@ const Home = () => {
                 <meta name="twitter:title" content="React JS Course in Surat | React JS Training in Surat | React JS Jobs" />
                 <meta name="twitter:description" content="Codesign Multimedia is the #No 1 IT Training institute in Surat. Provide 100% Job Placement Guarantee. Join now Computer course in Surat" />
                 <title>React JS Course in Surat | React JS Training in Surat | React JS Jobs</title>
-                {/* <!--Revolution Slider--> */}
-                <script src="/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-                <script src="/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-                <script src="/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-                <script src="/js/main-slider-script.js"></script>
-                {/* <!--Revolution Slider--> */}
-                <script src="/js/jquery.fancybox.js"></script>
-                <script src="/js/jquery-ui.js"></script>
-                <script src="/js/appear.js"></script>
-                <script src="/js/jquery.countdown.js"></script>
-                <script src="/js/select2.min.js"></script>
-                <script src="/js/owl.js"></script>
-                <script src="/js/script.js" async></script>
             </Helmet>
             <Header id="1" />
             <Slider />
